@@ -1,0 +1,10 @@
+{
+  "engine": "/home/watermiu/gromacs-2025.3-double/bin/gmx_d",
+  "system": "CBAA N20 methylated high density; TIP3P; 130044 atoms",
+  "solvatedEmConverged": true,
+  "solvatedEmFmax": 490.088276295608,
+  "nvtSmokeSteps": 10,
+  "nvtSilicaDisplacementNm": 0,
+  "nvtTprTrrSilicaDisplacementNm": 0,
+  "scope": "Numerical smoke check, not production sampling or force-field physical validation"
+}

@@ -1,4 +1,4 @@
-"""Template-preserving silica brush builder. Coordinates in nm, charges in e."""
+"""Fixed-silica brush assembly. Organic geometry is independently generated."""
 import io, json, math, re, zipfile, hashlib
 from pathlib import Path
 from functools import lru_cache
@@ -51,23 +51,16 @@ def periodic_delta(a,b,box):
     d = [a[i]-b[i] for i in range(3)]
     return [d[i]-round(d[i]/box[i])*box[i] for i in range(3)]
 
-def select_sites(chains, box, seed):
-    # Farthest-point sampling in the periodic xy plane, deterministic seed site.
-    sites = [c[33]['xyz'] for c in chains]
-    selected = [seed % 20]
-    while len(selected)<10:
-        def score(i):
-            return min(sum(x*x for x in periodic_delta(sites[i],sites[j],box)[:2]) for j in selected)
-        selected.append(max((i for i in range(20) if i not in selected), key=lambda i:(score(i),-i)))
-    return sorted(selected)
+REMOVED_SITES = {2,7,12,17,4,9,14,19}
+
+def select_sites(chains, box, seed=0):
+    return [i for i in range(20) if i+1 not in REMOVED_SITES]
 
 def restore_sub(chain, sub, box):
     # All existing silica coordinates survive. Restore missing O34/H4 along Si1-C1.
     source = {a['name']:a for a in chain[:52]}
     origin = source['Si1']['xyz']
-    vector = periodic_delta(chain[52]['xyz'], origin, box)
-    length = math.sqrt(sum(v*v for v in vector))
-    direction = [v/length for v in vector]
+    direction = [0,0,1]  # canonical graft normal, independent of source organic coordinates
     # Learn Si1-O34 and O34-H4 vectors from an actual bare SUB, not guessed charges.
     _,_,blocks,_,_ = template('CBAA')
     ref = {a['name']:a['xyz'] for a in blocks[0]}
@@ -91,14 +84,18 @@ def restore_sub(chain, sub, box):
     source['H4']={'xyz':[oxygen[i]+rotated[i] for i in range(3)]}
     return [dict(res=chain[0]['res'],residue='SUB',name=a[4],xyz=source[a[4]]['xyz'][:]) for a in sub['atoms']]
 
-def build(key='CBAA', density='high', seed=0, repeats=20):
+def build(key='CBAA', density='high', seed=0, repeats=20, methyl=True):
+    from polymer import make_chain, VERSION
     if density not in ('high','low'): raise ValueError('Density must be high or low')
-    if repeats != 20: raise ValueError('Only the supplied, fully defined N=20 templates are enabled')
+    if not isinstance(repeats,int) or not 1<=repeats<=60: raise ValueError('Repeat units must be an integer from 1 to 60')
+    if not isinstance(methyl,bool): raise ValueError('Methyl must be boolean')
     if not isinstance(seed,int) or not 0<=seed<=19: raise ValueError('Site seed must be 0–19')
     sub,sup,blocks,chains,box=template(key)
     keep=list(range(20)) if density=='high' else select_sites(chains,box,seed)
     converted=[restore_sub(c,sub,box) for i,c in enumerate(chains) if i not in keep]
-    molecules=[(b,sub) for b in blocks+converted]+[(chains[i],sup) for i in keep]
+    generated=[make_chain(key,repeats,methyl,chains[i]) for i in keep]
+    molecules=[(b,sub) for b in blocks+converted]+generated
+    sup=generated[0][1]
     atoms=[]; frozen=[]; charge=0; bonds=[]
     for block,top in molecules:
         offset=len(atoms)
@@ -110,7 +107,8 @@ def build(key='CBAA', density='high', seed=0, repeats=20):
             charge+=float(t[6])
         bonds.extend([[offset+int(b[0])-1,offset+int(b[1])-1] for b in top['bonds']])
     area=box[0]*box[1]
-    return dict(template=key,density=density,seed=seed,repeats=20,box=box,area=area,chainCount=len(keep),graftDensity=len(keep)/area,subCount=140+len(converted),atoms=atoms,bonds=bonds,frozen=frozen,charge=charge,keptSites=[i+1 for i in keep],sites=[dict(id=i+1,xyz=c[33]['xyz'],kept=i in keep) for i,c in enumerate(chains)],missingIncludes=missing_includes(),status='geometry-generated; GROMACS validation pending')
+    box=box[:]; box[2]=max(box[2],max(a['xyz'][2] for a in atoms)+4)
+    return dict(template=key,density=density,repeats=repeats,methyl=methyl,geometryVersion=VERSION,sidechainOrientation='alternating reflection; identical sequence for every chain',box=box,area=area,chainCount=len(keep),graftDensity=len(keep)/area,subCount=140+len(converted),atoms=atoms,bonds=bonds,frozen=frozen,charge=charge,keptSites=[i+1 for i in keep],removedSites=sorted(REMOVED_SITES) if density=='low' else [],topology=sup,topologyCounts={k:len(v) for k,v in sup.items()},missingIncludes=missing_includes(),status='generated',minimization=None)
 
 def catalog():
     result=[]
@@ -124,6 +122,8 @@ def catalog():
     return dict(templates=result,missingIncludes=missing_includes())
 
 def archive(model):
+    from polymer import itp_text
+    from simulation import EM_MDP, NVT_MDP, RUN_SCRIPT, INDEX_SCRIPT
     memory=io.BytesIO()
     with zipfile.ZipFile(memory,'w',zipfile.ZIP_DEFLATED) as z:
         lines=['BrushBuilder dry surface; silica fixed',str(len(model['atoms']))]
@@ -137,15 +137,23 @@ def archive(model):
             index+=f'[ {name} ]\n'+'\n'.join(' '.join(map(str,values[i:i+15])) for i in range(0,len(values),15))+'\n'
         z.writestr('index.ndx',index)
         z.writestr('freeze.mdp','; Merge into EVERY simulation stage; not a complete MDP\nfreezegrps = Silica\nfreezedim = Y Y Y\n; Keep lateral box dimensions fixed. Disable COM removal on Silica.\n; Rebuild Mobile/index groups after solvation.\n')
-        topname=TEMPLATES[model['template']]
+        topname='BRUSH'
+        z.writestr('BRUSH.itp',itp_text(model['topology']))
         z.writestr('topol.top',f'#include "forcefield.itp"\n#include "SUB_O34-H4.itp"\n#include "{topname}.itp"\n\n[ system ]\nBrushBuilder dry surface\n\n[ molecules ]\nSUB {model["subCount"]}\n{topname} {model["chainCount"]}\n')
-        files=['forcefield.itp','ffbonded.itp','ffnonbonded.itp','SUB_O34-H4.itp',topname+'.itp']
+        files=['forcefield.itp','ffbonded.itp','ffnonbonded.itp','SUB_O34-H4.itp']
         for optional in ['cmap.itp','nbfix.itp','ffmissingdihedrals.itp']:
             if (EXAMPLE/optional).exists(): files.append(optional)
         for file in files: z.write(EXAMPLE/file,file)
-        report={k:v for k,v in model.items() if k not in ('atoms','bonds','frozen')}
+        report={k:v for k,v in model.items() if k not in ('atoms','bonds','frozen','topology')}
+        report['frozenAtoms']=ids
         report['atomCount']=len(model['atoms']); report['frozenCount']=len(ids)
         report['sourceSHA256']={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [EXAMPLE/(model['template']+'.gro'),*[EXAMPLE/f for f in files]]}
+        report['generatorSHA256']={f:hashlib.sha256((ROOT/f).read_bytes()).hexdigest() for f in ['builder.py','polymer.py','simulation.py']}
         z.writestr('manifest.json',json.dumps(report,indent=2))
-        z.writestr('README.txt','Dry surface only. Original water, ions and protein intentionally excluded.\nSilica coordinates preserved; use freeze.mdp settings in every stage, including restored OH.\nLow density replaces whole SUP+chain molecules with SUB topology, restoring O34/H4 and Si1 charge. Inspect newly constructed OH contacts; minimize mobile atoms while silica stays fixed.\nN=20 only; chemistry is preserved exactly, not recombined.\nMissing force-field includes: '+', '.join(model['missingIncludes'])+'\nNo GROMACS preprocessing/minimization has been performed. Complete dependencies, solvate, regenerate index groups and validate before MD.\n')
+        for p in sorted((ROOT/'geometry_templates').glob('*.json')): z.write(p,'geometry_templates/'+p.name)
+        for p in sorted((ROOT/'parameter_audit').glob('*.json')): z.write(p,'parameter_audit/'+p.name)
+        for f in ['tip3p.itp','ions.itp']: z.write(EXAMPLE/f,f)
+        z.writestr('em.mdp',EM_MDP); z.writestr('nvt.mdp',NVT_MDP)
+        z.writestr('run_md.sh',RUN_SCRIPT); z.writestr('update_index.py',INDEX_SCRIPT)
+        z.writestr('README.txt','Generated organic coordinates are independent of source GRO coordinates.\nSilica is frozen in all XYZ directions during every stage. Low removes sites 2,7,12,17,4,9,14,19 (12 chains remain).\nSee manifest.json for minimization/convergence and frozen-coordinate verification. Only a completed job is MD-ready.\nRun bash run_md.sh with GROMACS and Python 3 for TIP3P solvation, solvated minimization and a 100 ps NVT example. No protein or added salt; customize duration/conditions for your study. Box area is fixed, no pressure coupling.\nAlpha-H substitution preserves charge using an explicit +0.09 H / -0.09 alpha-C increment and valence-based aliphatic types. This is an assigned force-field patch, not newly QM-validated chemistry.\n')
     return memory.getvalue()

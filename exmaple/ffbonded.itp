@@ -24479,3 +24479,18 @@
 ;      i        j        k        l  func         phi0         kphi
    CG2O1    CG301    NG2S1    OG2D1     2     0.000000  1004.159973
    CG2O2    CG301    OG2D1    OG302     2     0.000000   518.815979
+
+; BrushBuilder DS proper torsion supplement
+[ dihedraltypes ]
+CG2O1 CG301 CG321 CG311 9 0.000000 0.627600 3 ; added by jf 20261021; PARM.PRM:5866; DS X    CT   CT   X        0.15 3    0.0; inferred environment-specific mapping, not DS-engine assignment
+CG301 CG321 CG311 CG2O1 9 0.000000 0.627600 3 ; added by jf 20261021; PARM.PRM:5866; DS X    CT   CT   X        0.15 3    0.0; inferred environment-specific mapping, not DS-engine assignment
+NG2S1 CG321 CG321 CG324 9 0.000000 0.627600 3 ; added by jf 20261021; PARM.PRM:5866; DS X    CT   CT   X        0.15 3    0.0; inferred environment-specific mapping, not DS-engine assignment
+CG324 CG321 CG321 CG2O3 9 0.000000 0.627600 3 ; added by jf 20261021; PARM.PRM:5866; DS X    CT   CT   X        0.15 3    0.0; inferred environment-specific mapping, not DS-engine assignment
+
+; BrushBuilder DS proper torsion supplement
+[ dihedraltypes ]
+CG2O1 CG301 CG321 CG321 9 0.000000 0.627600 3 ; added by jf 20261021; PARM.PRM:5866; DS X    CT   CT   X        0.15 3    0.0; inferred environment-specific mapping, not DS-engine assignment
+CG301 CG321 CG321 CG2O1 9 0.000000 0.627600 3 ; added by jf 20261021; PARM.PRM:5866; DS X    CT   CT   X        0.15 3    0.0; inferred environment-specific mapping, not DS-engine assignment
+CG301 CG321 CG321 CG2O2 9 0.000000 0.627600 3 ; added by jf 20261021; PARM.PRM:5866; DS X    CT   CT   X        0.15 3    0.0; inferred environment-specific mapping, not DS-engine assignment
+CG2O2 CG311 CG321 CG311 9 0.000000 0.627600 3 ; added by jf 20261021; PARM.PRM:5866; DS X    CT   CT   X        0.15 3    0.0; inferred environment-specific mapping, not DS-engine assignment
+CG311 CG321 CG311 CG2O2 9 0.000000 0.627600 3 ; added by jf 20261021; PARM.PRM:5866; DS X    CT   CT   X        0.15 3    0.0; inferred environment-specific mapping, not DS-engine assignment

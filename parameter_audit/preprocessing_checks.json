@@ -1,0 +1,50 @@
+[
+  {
+    "template": "CBAA",
+    "repeats": 1,
+    "methyl": false,
+    "preprocessing": "passed"
+  },
+  {
+    "template": "CBAA",
+    "repeats": 60,
+    "methyl": false,
+    "preprocessing": "passed"
+  },
+  {
+    "template": "CBAA",
+    "repeats": 1,
+    "methyl": true,
+    "preprocessing": "passed"
+  },
+  {
+    "template": "CBAA",
+    "repeats": 60,
+    "methyl": true,
+    "preprocessing": "passed"
+  },
+  {
+    "template": "SBMA",
+    "repeats": 1,
+    "methyl": false,
+    "preprocessing": "passed"
+  },
+  {
+    "template": "SBMA",
+    "repeats": 60,
+    "methyl": false,
+    "preprocessing": "passed"
+  },
+  {
+    "template": "SBMA",
+    "repeats": 1,
+    "methyl": true,
+    "preprocessing": "passed"
+  },
+  {
+    "template": "SBMA",
+    "repeats": 60,
+    "methyl": true,
+    "preprocessing": "passed"
+  }
+]
