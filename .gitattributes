@@ -1,0 +1,2 @@
+# Preserve supplied scientific inputs byte-for-byte across platforms.
+exmaple/** -text

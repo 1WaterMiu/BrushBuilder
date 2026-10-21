@@ -1,0 +1,14 @@
+#include "./charmm36-jul2022.ff/forcefield.itp"
+#include "./charmm36-jul2022.ff/SUB_O34-H4.itp"
+#include "./charmm36-jul2022.ff/SUP_CBAA3N20.itp"
+#include "./charmm36-jul2022.ff/tip3p.itp"
+
+[ system ]
+; Name
+Protein in water
+
+[ molecules ]
+; Compound        #mols
+    SUB            140
+ SUP_CBAA3N20         20
+    SOL         30845

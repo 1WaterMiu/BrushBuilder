@@ -1,0 +1,18 @@
+#include "./forcefield.itp"
+#include "./SUB_O34-H4.itp"
+#include "./SUP_SBMA20.itp"
+#include "./tip3p.itp"
+#include "./PROA.itp"
+#include "./ions.itp"
+
+[ system ]
+; Name
+Protein in water
+
+[ molecules ]
+; Compound        #mols
+    SUB            140
+ SUP_SBMA20         20
+SOL         29883
+NA               26
+ PROA                  1
