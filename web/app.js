@@ -1,20 +1,26 @@
 const $=s=>document.querySelector(s);
 let catalog,model,key='CBAA',density='high',table='repeatAtoms',view='side',angle=0,zoom=1,request=0,currentJob=null,poll=null;
-function settings(){return {template:key,density,repeats:Number($('#repeats').value),methyl:$('#methyl').checked};}
+function settings(){const headGroup=$('#headGroup').value;return {headGroup,linker:$('#linkerChoice').value,...(!['PC','TMAO'].includes(headGroup)?{spacer:Number($('#spacer').value)}:{}),density,repeats:Number($('#repeats').value),methyl:$('#methyl').checked};}
+function controls(){const head=$('#headGroup').value,fixed=['PC','TMAO'].includes(head);$('#spacer').disabled=fixed;$('#spacer').hidden=fixed;$('#spacerNote').textContent=fixed?(head==='PC'?'固定为 –P–O–CH₂–CH₂–N⁺；不提供 spacer 选择。':'固定 N⁺–O⁻ 直接连接；不提供 spacer 选择。'):'只计算正负离子之间的 CH₂；不包含 linker 到 head 的连接段。';}
 function status(message,kind=''){const el=$('#status');el.textContent=message;el.className=kind;}
 async function json(url,options){const r=await fetch(url,options);if(!r.ok)throw Error((await r.text()).replace(/<[^>]*>/g,' ').slice(-1800));return r.json();}
 async function load(){
- const id=++request;currentJob=null;clearTimeout(poll);$('#download').disabled=true;$('#optimize').disabled=true;
+ controls();const id=++request;currentJob=null;$('#structureDownload').disabled=true;clearTimeout(poll);$('#download').disabled=true;$('#optimize').disabled=true;
  if(!$('#repeats').checkValidity()||!Number.isInteger(Number($('#repeats').value))){status('链长请输入 1–60 的整数','error');return;}
  status('正在独立生成坐标并重建拓扑…');
- try{const data=await json('/api/model?'+new URLSearchParams(settings()));if(id!==request)return;model=data;render();$('#optimize').disabled=false;status('初始坐标已生成。所有链共用独立几何模板；点击能量最小化后检查参数与 silica 位移。');}
+ try{const data=await json('/api/model?'+new URLSearchParams(settings()));if(id!==request)return;model=data;render();$('#structureDownload').disabled=false;$('#optimize').disabled=!model.parameterized;status(model.parameterized?'初始坐标已生成，沿用已有模板参数。可进行 GROMACS 最小化。':'结构已生成：新增组合未填充 partial charge 和力场类型。可下载全原子结构；MD 最小化待参数化。');}
  catch(e){if(id===request)status('生成失败：'+e.message,'error');}
 }
 function render(){
- const t=catalog.templates.find(t=>t.id===key);$('#linker').textContent=t.linker;
- $('#density').textContent=model.graftDensity.toFixed(4);$('#chains').textContent=model.chainCount;$('#area').textContent=model.area.toFixed(2);$('#charge').textContent=(Math.abs(model.charge)<1e-8?0:model.charge).toFixed(5);
+ const chem=model.chemistry;$('#linker').textContent=chem.linker;
+ $('#density').textContent=model.graftDensity.toFixed(4);$('#chains').textContent=model.chainCount;$('#area').textContent=model.area.toFixed(2);$('#charge').textContent=model.charge===null?'未填充':(Math.abs(model.charge)<1e-8?0:model.charge).toFixed(5);
  const done=model.status==='completed',top=model.topology;
- const fields={'几何模板':model.geometryVersion,'原子 / 固定':model.atoms.length.toLocaleString()+' / '+model.frozen.length.toLocaleString(),'链长 / 甲基':model.repeats+' / '+(model.methyl?'有':'无'),'最小化':done?'已收敛':'尚未完成','Silica 位移':done?'0 nm · 已核验':'待核验'};
+ $('#chemistrySummary').textContent=chem.nomenclature.displayName+' / '+chem.linker+' · '+chem.monomerFormula+' · '+chem.chargePath+' · 单体 '+chem.repeatAtomCount+' 原子（含全部 H）';
+ $('#moleculeDiagram').innerHTML=chem.structureSvg;
+ const note=chem.matchesOriginalItp?'与原始 ITP 的化学连接一致。':(model.parameterized?'自定义 α-H 版本；沿用已有替换规则。':'自定义组合；未填充原子类型与 partial charge。');
+ $('#templateCheck').textContent=note+' Linker 到 head 的连接段：'+chem.connectorCH2+' 个 CH₂。'+(chem.referenceTemplate?' N=20 原 ITP 全分子核对：'+(chem.referenceTemplate==='CBAA'?'915 原子 / 916 键':'855 原子 / 856 键')+'，缺失原子/键 = 0（带甲基版本）。':'')+(chem.referenceTemplate==='CBAA'?' 来源文件名 CBAA3；按其实际甲基/amide 结构，规范显示为 CBMAA · spacer 3。':'');
+ $('#chemistrySource').replaceChildren();const sourceLink=document.createElement('a');sourceLink.href=chem.nomenclature.source.url;sourceLink.textContent=chem.nomenclature.source.title;sourceLink.target='_blank';sourceLink.rel='noopener';$('#chemistrySource').append(sourceLink,document.createTextNode(' · '+chem.nomenclature.source.scope));
+ const fields={'参数状态':model.parameterized?'已有模板 / 已有 α-H 规则':'未填充电荷与类型','几何模板':model.geometryVersion,'原子 / 固定':model.atoms.length.toLocaleString()+' / '+model.frozen.length.toLocaleString(),'链长 / 甲基':model.repeats+' / '+(model.methyl?'有':'无'),'最小化':done?'已收敛':'尚未完成','Silica 位移':done?'0 nm · 已核验':'待核验'};
  $('#source').innerHTML=Object.entries(fields).map(([k,v])=>'<dt>'+k+'</dt><dd>'+v+'</dd>').join('');
  const terms={Bond:top.bonds.length,Angle:top.angles.length,Dihedral:top.dihedrals.filter(r=>r[4]==='9').length,Improper:top.dihedrals.filter(r=>r[4]==='2').length,'1–4 pairs':top.pairs.length};
  $('#counts').innerHTML=Object.entries(terms).map(([k,v])=>'<dt>'+k+'</dt><dd>'+v.toLocaleString()+'</dd>').join('');
@@ -40,6 +46,7 @@ async function watch(id,version){
   else poll=setTimeout(()=>watch(id,version),1800);
  }catch(e){if(version===request){status(e.message,'error');$('#optimize').disabled=false;}}
 }
+$('#structureDownload').onclick=()=>{if(model)location.href='/api/structure?'+new URLSearchParams(settings());};
 $('#download').onclick=()=>{if(currentJob&&model.status==='completed')location.href='/api/download?id='+currentJob;};
 const canvas=$('#canvas'),ctx=canvas.getContext('2d');
 function draw(){
@@ -58,4 +65,7 @@ for(const v of ['side','top'])$('#'+v).onclick=()=>{view=v;$('#side').classList.
 $('#reset').onclick=()=>{angle=0;zoom=1;draw();};$('#repeats').onchange=load;$('#methyl').onchange=load;
 document.querySelectorAll('[data-density]').forEach(b=>b.onclick=()=>{density=b.dataset.density;document.querySelectorAll('[data-density]').forEach(x=>x.classList.toggle('active',x===b));load();});
 document.querySelectorAll('[data-table]').forEach(b=>b.onclick=()=>{table=b.dataset.table;document.querySelectorAll('[data-table]').forEach(x=>x.classList.toggle('active',x===b));renderTable();});
-json('/api/catalog').then(data=>{catalog=data;$('#templates').innerHTML=data.templates.map(t=>'<button class="template '+(t.id===key?'active':'')+'" data-template="'+t.id+'"><strong>'+(t.id==='CBAA'?'CBAA3':'SBMA')+'</strong><small>'+t.linker.toUpperCase()+' / 独立几何模板</small></button>').join('');document.querySelectorAll('[data-template]').forEach(b=>b.onclick=()=>{key=b.dataset.template;document.querySelectorAll('[data-template]').forEach(x=>x.classList.toggle('active',x===b));load();});load();}).catch(e=>status(e.message,'error'));
+for(const id of ['headGroup','linkerChoice','spacer'])$('#'+id).onchange=load;
+$('#presetCbaa').onclick=()=>{$('#headGroup').value='CB';$('#linkerChoice').value='amide';$('#spacer').value='3';$('#methyl').checked=true;load();};
+$('#presetSbma').onclick=()=>{$('#headGroup').value='SB';$('#linkerChoice').value='ester';$('#spacer').value='3';$('#methyl').checked=true;load();};
+json('/api/catalog').then(data=>{catalog=data;load();}).catch(e=>status(e.message,'error'));

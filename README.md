@@ -11,6 +11,18 @@ Run in C:\personal\BrushBuilder:
 
 Open http://127.0.0.1:8765. The GROMACS runner detects native gmx_d/gmx or the installed Ubuntu WSL executable. Double precision is preferred because frozen substrate interactions can create a large constant energy contribution.
 
+## Head groups and names
+
+Head group, linker, charge spacer and alpha methyl are independent selectors. CB, SB, phosphate-type PB and sulfabetaine support 1–4 methylenes between charged groups. PC has fixed O–CH2–CH2–N connectivity; TMAO-derived heads have a direct N–O bond. There are 36 head/linker/spacer combinations, or 72 including methyl states. Ester uses an O–(CH2)2 connector; amide uses NH–(CH2)3. These connectors are distinct from the adjustable charge spacer.
+
+Naming is derived from the actual graph: SBA = acrylate, SBMA = methacrylate, SBAA = acrylamide, SBMAA = methacrylamide. CB follows CBA/CBMA/CBAA/CBMAA. The supplied file named SUP_CBAA3N20.itp contains alpha methyl, so its structure is displayed as **CBMAA · spacer 3**, retaining the original filename as provenance. No atom is removed to make the structure agree with the filename. Numerical spacer labels explicitly count CH2 groups and are not assumed to reproduce all naming conventions used in papers.
+
+Sources and scope are embedded in chemistry.py and the UI. [RSC Scheme 1](https://pubs.rsc.org/en/content/articlepdf/2026/lp/d6lp00019c) distinguishes the four SB monomers. [CB synthesis definitions](https://patents.google.com/patent/US20140275614A1/en) distinguish CBAA and CBMAA. [MPC](https://pubchem.ncbi.nlm.nih.gov/compound/128934) is graph-matched to its published SMILES. [Sulfabetaine](https://pmc.ncbi.nlm.nih.gov/articles/PMC6631746/) uses sulfate ester, not sulfonate. [TMAO-derived acrylamide](https://pmc.ncbi.nlm.nih.gov/articles/PMC6570511/) uses a propyl connector and direct N–O bond. [Phosphate-type phosphobetaine](https://pubmed.ncbi.nlm.nih.gov/1880723/) supports the user-confirmed N+–(CH2)n–O–P(=O)(O−)–OH head motif. Enumerated derivatives are not claimed to be separately synthesized/literature-verified monomers; PB is this explicit phosphate variant, not an ambiguous universal PB structure.
+
+New combinations contain **no assigned partial charges or force-field types**. Their preview and structure ZIP are available; MD submission/export is blocked. Structure ZIP contains full explicit-H vinyl monomer SDF, capped repeat SDF, surface GRO and connectivity JSON. Formal charges in SDF represent chemical valence and are not MD partial charges. Existing reference parameters and the previously implemented alpha-H patch remain unchanged. Structure and MD downloads are separate.
+
+N20 template checks compare all named atoms, every bond and explicit-H repeat graphs: source CBAA 915 atoms/916 bonds; SBMA 855 atoms/856 bonds; zero missing or extra atoms/bonds. Atom counts include the silica/anchor portion of each grafted molecule. Coordinates are independently generated and therefore are not expected to match source polymer coordinates.
+
 ## Construction controls
 
 - CBAA3 / amide and SBMA / ester source chemical definitions.

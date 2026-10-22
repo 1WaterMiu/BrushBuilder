@@ -96,7 +96,7 @@ def coordinates(key,kind,methyl=True):
     path.write_text(json.dumps(dict(version=VERSION,method='RDKit ETKDG + UFF; fixed canonical polymerization ports; no GRO polymer coordinates',coordinates_nm=result),indent=2))
     return result
 
-def make_topology(key,n,methyl):
+def make_topology(key,n,methyl,chemistry=None):
     src=source(key)
     atoms=[a[:] for a in src['atoms'][:52]]
     for a in atoms: a[2]='1'
@@ -105,7 +105,10 @@ def make_topology(key,n,methyl):
         if int(b[0])<=52 and int(b[1])<=52: edges.append((int(b[0]),int(b[1])))
     for r in range(n+1):
         kind='anchor' if r==0 else 'repeat'
-        block,bonds=fragment(key,kind,methyl,r==n and r>0)
+        if chemistry is not None and r>0:
+            from chemistry import repeat_fragment
+            block,bonds=repeat_fragment(chemistry,methyl,r==n)
+        else:block,bonds=fragment(key,kind,methyl,r==n and r>0)
         mapping={}
         for name,a in block.items():
             i=len(atoms)+1; mapping[name]=i
@@ -135,10 +138,13 @@ def make_topology(key,n,methyl):
         improper.append([str(g[x]) for x in names]+['2'])
     return dict(moleculetype=[['BRUSH','3']],atoms=atoms,bonds=[list(map(str,b))+['1'] for b in edges],pairs=[list(map(str,p))+['1'] for p in sorted(pairs)],angles=angles,dihedrals=proper+improper),groups
 
-def make_chain(key,n,methyl,silica):
-    topology,groups=make_topology(key,n,methyl)
+def make_chain(key,n,methyl,silica,chemistry=None):
+    topology,groups=make_topology(key,n,methyl,chemistry)
     local_anchor=coordinates(key,'anchor',True)
-    local_repeat=coordinates(key,'repeat',methyl)
+    if chemistry is None:local_repeat=coordinates(key,'repeat',methyl)
+    else:
+        from chemistry import coordinates as head_coordinates
+        local_repeat=head_coordinates(chemistry,methyl)
     si=np.array(silica[33]['xyz'])
     # Canonical Si-C1 distance 0.185 nm. Backbone grows along +z.
     origin=si+np.array([0,0,.885])

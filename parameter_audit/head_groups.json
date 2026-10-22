@@ -1,0 +1,67 @@
+{
+  "templateChecks": [
+    {
+      "template": "CBAA",
+      "sourceAtomCount": 915,
+      "generatedAtomCount": 915,
+      "sourceBondCount": 916,
+      "generatedBondCount": 916,
+      "missingAtoms": [],
+      "extraAtoms": [],
+      "missingBonds": [],
+      "extraBonds": [],
+      "explicitHydrogenRepeatGraphIdentical": true,
+      "atomTypesChargesMassesIdentical": true,
+      "passed": true
+    },
+    {
+      "template": "SBMA",
+      "sourceAtomCount": 855,
+      "generatedAtomCount": 855,
+      "sourceBondCount": 856,
+      "generatedBondCount": 856,
+      "missingAtoms": [],
+      "extraAtoms": [],
+      "missingBonds": [],
+      "extraBonds": [],
+      "explicitHydrogenRepeatGraphIdentical": true,
+      "atomTypesChargesMassesIdentical": true,
+      "passed": true
+    }
+  ],
+  "sources": {
+    "SB": {
+      "url": "https://pubs.rsc.org/en/content/articlepdf/2026/lp/d6lp00019c",
+      "title": "RSC Applied Polymers 2026, Scheme 1",
+      "scope": "SBA / SBMA / SBAA / SBMAA; standard spacer 3. Other spacers are enumerated homologues."
+    },
+    "CB": {
+      "url": "https://patents.google.com/patent/US20140275614A1/en",
+      "title": "CBMA, CBAA and CBMAA synthesis definitions",
+      "scope": "Acrylamide versus methacrylamide distinction. Exact spacer is recorded separately; source ITP supplies the spacer-3 reference graph."
+    },
+    "PB": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1880723/",
+      "title": "Trialkylammonio alkyl hydrogen phosphate phosphobetaines",
+      "scope": "Phosphate-type N+-(CH2)n-O-P(=O)(O-)-OH head motif, as confirmed by the user. Polymerizable combinations are enumerated derivatives, not all independently literature-verified monomers."
+    },
+    "sulfabetaine": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6631746/",
+      "title": "Sulfabetaine monomers and polymers (2019)",
+      "scope": "Sulfate ester head, distinct from sulfobetaine sulfonate; methacrylate and methacrylamide architectures. Additional homologues are enumerated derivatives."
+    },
+    "PC": {
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/128934",
+      "title": "MPC / 2-methacryloyloxyethyl phosphorylcholine",
+      "scope": "Exact MPC structure for ester + alpha-methyl. Other linker/backbone combinations are explicitly labelled derivatives."
+    },
+    "TMAO": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6570511/",
+      "title": "TMAO-derived acrylamide monomer (2019)",
+      "scope": "Oxidized dimethylaminopropyl acrylamide; N+-O- direct bond. Other backbones/linkers are derivatives."
+    }
+  },
+  "combinationCount": 72,
+  "newPartialCharges": "unassigned",
+  "namingNote": "Source filename CBAA3 has methacrylamide connectivity; display CBMAA, spacer 3"
+}

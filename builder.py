@@ -84,8 +84,14 @@ def restore_sub(chain, sub, box):
     source['H4']={'xyz':[oxygen[i]+rotated[i] for i in range(3)]}
     return [dict(res=chain[0]['res'],residue='SUB',name=a[4],xyz=source[a[4]]['xyz'][:]) for a in sub['atoms']]
 
-def build(key='CBAA', density='high', seed=0, repeats=20, methyl=True):
+def build(key='CBAA', density='high', seed=0, repeats=20, methyl=True,head_group=None,linker=None,spacer=None):
     from polymer import make_chain, VERSION
+    if key not in TEMPLATES:raise ValueError('Unknown template')
+    from chemistry import normalize,reference,metadata,VERSION as HEAD_VERSION
+    spec=normalize(key,head_group,linker,spacer)
+    ref=reference(spec)
+    key='CBAA' if spec[1]=='amide' else 'SBMA'
+    chemical=metadata(spec,methyl)
     if density not in ('high','low'): raise ValueError('Density must be high or low')
     if not isinstance(repeats,int) or not 1<=repeats<=60: raise ValueError('Repeat units must be an integer from 1 to 60')
     if not isinstance(methyl,bool): raise ValueError('Methyl must be boolean')
@@ -93,7 +99,7 @@ def build(key='CBAA', density='high', seed=0, repeats=20, methyl=True):
     sub,sup,blocks,chains,box=template(key)
     keep=list(range(20)) if density=='high' else select_sites(chains,box,seed)
     converted=[restore_sub(c,sub,box) for i,c in enumerate(chains) if i not in keep]
-    generated=[make_chain(key,repeats,methyl,chains[i]) for i in keep]
+    generated=[make_chain(key,repeats,methyl,chains[i],None if ref else spec) for i in keep]
     molecules=[(b,sub) for b in blocks+converted]+generated
     sup=generated[0][1]
     atoms=[]; frozen=[]; charge=0; bonds=[]
@@ -103,12 +109,13 @@ def build(key='CBAA', density='high', seed=0, repeats=20, methyl=True):
             idx=len(atoms)+1
             is_silica=t[3] in ('SUB','SUP')
             if is_silica: frozen.append(idx)
-            atoms.append(dict(a,charge=float(t[6]),type=t[1],frozen=is_silica))
-            charge+=float(t[6])
+            q=None if t[6]=='UNASSIGNED' else float(t[6])
+            atoms.append(dict(a,charge=q,type=t[1],frozen=is_silica))
+            if q is not None:charge+=q
         bonds.extend([[offset+int(b[0])-1,offset+int(b[1])-1] for b in top['bonds']])
     area=box[0]*box[1]
     box=box[:]; box[2]=max(box[2],max(a['xyz'][2] for a in atoms)+4)
-    return dict(template=key,density=density,repeats=repeats,methyl=methyl,geometryVersion=VERSION,sidechainOrientation='alternating reflection; identical sequence for every chain',box=box,area=area,chainCount=len(keep),graftDensity=len(keep)/area,subCount=140+len(converted),atoms=atoms,bonds=bonds,frozen=frozen,charge=charge,keptSites=[i+1 for i in keep],removedSites=sorted(REMOVED_SITES) if density=='low' else [],topology=sup,topologyCounts={k:len(v) for k,v in sup.items()},missingIncludes=missing_includes(),status='generated',minimization=None)
+    return dict(template=key,chemistry=chemical,parameterized=bool(ref),density=density,repeats=repeats,methyl=methyl,geometryVersion=VERSION if ref else HEAD_VERSION,sidechainOrientation='alternating reflection; identical sequence for every chain',box=box,area=area,chainCount=len(keep),graftDensity=len(keep)/area,subCount=140+len(converted),atoms=atoms,bonds=bonds,frozen=frozen,charge=charge if ref else None,keptSites=[i+1 for i in keep],removedSites=sorted(REMOVED_SITES) if density=='low' else [],topology=sup,topologyCounts={k:len(v) for k,v in sup.items()},missingIncludes=missing_includes(),status='generated',minimization=None)
 
 def catalog():
     result=[]
@@ -118,10 +125,12 @@ def catalog():
         for atom in sup['atoms']: groups.setdefault(atom[2],[]).append(atom)
         first=list(groups.values())[2]
         ids={int(a[0]) for a in first}
-        result.append(dict(id=key,name='CBAA3 · amide' if key=='CBAA' else 'SBMA · ester',linker='amide' if key=='CBAA' else 'ester',repeats=len(groups)-2,methyl=True,atomsPerChain=len(sup['atoms']),charge=sum(float(a[6]) for a in sup['atoms']),area=box[0]*box[1],anchorAtoms=sup['atoms'][:74],repeatAtoms=first,repeatBonds=[b for b in sup['bonds'] if int(b[0]) in ids and int(b[1]) in ids],source=TEMPLATES[key]+'.itp'))
-    return dict(templates=result,missingIncludes=missing_includes())
+        result.append(dict(id=key,name='CBMAA · spacer 3 · amide (source CBAA3)' if key=='CBAA' else 'SBMA · ester',linker='amide' if key=='CBAA' else 'ester',repeats=len(groups)-2,methyl=True,atomsPerChain=len(sup['atoms']),charge=sum(float(a[6]) for a in sup['atoms']),area=box[0]*box[1],anchorAtoms=sup['atoms'][:74],repeatAtoms=first,repeatBonds=[b for b in sup['bonds'] if int(b[0]) in ids and int(b[1]) in ids],source=TEMPLATES[key]+'.itp'))
+    from chemistry import FAMILIES,template_comparison
+    return dict(templates=result,headGroups=FAMILIES,linkers=['ester','amide'],spacers=[1,2,3,4],templateComparisons=[template_comparison(k) for k in TEMPLATES],missingIncludes=missing_includes())
 
 def archive(model):
+    if not model.get('parameterized',True):raise ValueError('New chemistry has no assigned partial charges or force-field types; MD export is unavailable')
     from polymer import itp_text
     from simulation import EM_MDP, NVT_MDP, RUN_SCRIPT, INDEX_SCRIPT
     memory=io.BytesIO()
@@ -148,7 +157,7 @@ def archive(model):
         report['frozenAtoms']=ids
         report['atomCount']=len(model['atoms']); report['frozenCount']=len(ids)
         report['sourceSHA256']={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [EXAMPLE/(model['template']+'.gro'),*[EXAMPLE/f for f in files]]}
-        report['generatorSHA256']={f:hashlib.sha256((ROOT/f).read_bytes()).hexdigest() for f in ['builder.py','polymer.py','simulation.py']}
+        report['generatorSHA256']={f:hashlib.sha256((ROOT/f).read_bytes()).hexdigest() for f in ['builder.py','polymer.py','simulation.py','chemistry.py']}
         z.writestr('manifest.json',json.dumps(report,indent=2))
         for p in sorted((ROOT/'geometry_templates').glob('*.json')): z.write(p,'geometry_templates/'+p.name)
         for p in sorted((ROOT/'parameter_audit').glob('*.json')): z.write(p,'parameter_audit/'+p.name)
