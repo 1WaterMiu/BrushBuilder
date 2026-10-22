@@ -17,9 +17,16 @@ def parameters(q):
 
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self,*args,**kwargs): super().__init__(*args,directory=str(ROOT/'web'),**kwargs)
+    def end_headers(self):
+        # Keep the local HTML and its scripts in sync after application updates.
+        self.send_header('Cache-Control','no-store')
+        super().end_headers()
     def do_GET(self):
         url=urlparse(self.path)
         if not url.path.startswith('/api/'):
+            # Ignore validators from assets cached by older server versions.
+            for header in ('If-Modified-Since','If-None-Match'):
+                if header in self.headers: del self.headers[header]
             return super().do_GET()
         try:
             if url.path=='/api/catalog': data=json.dumps(catalog()).encode(); mime='application/json'
