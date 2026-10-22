@@ -15,7 +15,7 @@ class BuilderTests(unittest.TestCase):
                 fixed=Counter(tuple(m['atoms'][i-1]['xyz']) for i in m['frozen'])
                 self.assertFalse(original-fixed)
                 self.assertEqual(len(m['frozen']),8600 if density=='high' else 8616)
-                self.assertAlmostEqual(m['charge'],0,places=8)
+                self.assertIsNone(m['charge']) # Short-chain CGenFF contexts pending.
                 self.assertEqual(m['chainCount'],20 if density=='high' else 12)
                 self.assertEqual(m['removedSites'],[] if density=='high' else [2,4,7,9,12,14,17,19])
 
@@ -64,6 +64,9 @@ class BuilderTests(unittest.TestCase):
 
     def test_package(self):
         m=build('SBMA','low',repeats=4,methyl=False)
+        with self.assertRaises(ValueError):archive(m)
+        # Test the archive layout independently of the production readiness gate.
+        m['parameterized']=True
         with zipfile.ZipFile(io.BytesIO(archive(m))) as z:
             for name in ['BRUSH.itp','em.mdp','nvt.mdp','run_md.sh','update_index.py','tip3p.itp','ions.itp']:
                 self.assertIn(name,z.namelist())

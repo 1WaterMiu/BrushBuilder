@@ -1,0 +1,298 @@
+{
+  "atoms": 41,
+  "bonds": 40,
+  "formalCharge": 0,
+  "formula": "C11H22NO6P",
+  "smiles": "C=C(C)C(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C",
+  "uffConverged": true,
+  "sha256": "3725d1d4e34c0becb2488d405d37f4b8cbffb91906d272cb384fd64b66da4833",
+  "atomMap": [
+    {
+      "unit": 1,
+      "name": "atom1",
+      "cgenffName": "C1",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom2",
+      "cgenffName": "C2",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom3",
+      "cgenffName": "C3",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom4",
+      "cgenffName": "C4",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom5",
+      "cgenffName": "O5",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom6",
+      "cgenffName": "O6",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom7",
+      "cgenffName": "C7",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom8",
+      "cgenffName": "C8",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom9",
+      "cgenffName": "O9",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom10",
+      "cgenffName": "P10",
+      "element": "P",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom11",
+      "cgenffName": "O11",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom12",
+      "cgenffName": "O12",
+      "element": "O",
+      "formalCharge": -1
+    },
+    {
+      "unit": 1,
+      "name": "atom13",
+      "cgenffName": "O13",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom14",
+      "cgenffName": "C14",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom15",
+      "cgenffName": "C15",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom16",
+      "cgenffName": "N16",
+      "element": "N",
+      "formalCharge": 1
+    },
+    {
+      "unit": 1,
+      "name": "atom17",
+      "cgenffName": "C17",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom18",
+      "cgenffName": "C18",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom19",
+      "cgenffName": "C19",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom20",
+      "cgenffName": "H20",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom21",
+      "cgenffName": "H21",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom22",
+      "cgenffName": "H22",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom23",
+      "cgenffName": "H23",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom24",
+      "cgenffName": "H24",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom25",
+      "cgenffName": "H25",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom26",
+      "cgenffName": "H26",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom27",
+      "cgenffName": "H27",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom28",
+      "cgenffName": "H28",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom29",
+      "cgenffName": "H29",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom30",
+      "cgenffName": "H30",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom31",
+      "cgenffName": "H31",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom32",
+      "cgenffName": "H32",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom33",
+      "cgenffName": "H33",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom34",
+      "cgenffName": "H34",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom35",
+      "cgenffName": "H35",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom36",
+      "cgenffName": "H36",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom37",
+      "cgenffName": "H37",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom38",
+      "cgenffName": "H38",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom39",
+      "cgenffName": "H39",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom40",
+      "cgenffName": "H40",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "atom41",
+      "cgenffName": "H41",
+      "element": "H",
+      "formalCharge": 0
+    }
+  ]
+}

@@ -1,0 +1,865 @@
+{
+  "atoms": 122,
+  "bonds": 121,
+  "formalCharge": 0,
+  "formula": "C35H67N5O15",
+  "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)[O-])C(=O)OCC[N+](C)(C)[O-])C(=O)OCC[N+](C)(C)[O-])C(=O)OCC[N+](C)(C)[O-])C(=O)OCC[N+](C)(C)[O-]",
+  "uffConverged": true,
+  "sha256": "4f596a154ac654c3c2acc47ea43a66ce158c8a3f0759d25cf9bdf7dbf2e2d47c",
+  "atomMap": [
+    {
+      "unit": 1,
+      "name": "C6",
+      "cgenffName": "C1",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "C7",
+      "cgenffName": "C2",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "C8",
+      "cgenffName": "C3",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "O36",
+      "cgenffName": "O4",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "O34",
+      "cgenffName": "O5",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "C106",
+      "cgenffName": "C6",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "C107",
+      "cgenffName": "C7",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "N108",
+      "cgenffName": "N8",
+      "element": "N",
+      "formalCharge": 1
+    },
+    {
+      "unit": 1,
+      "name": "C109",
+      "cgenffName": "C9",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "C110",
+      "cgenffName": "C10",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "O111",
+      "cgenffName": "O11",
+      "element": "O",
+      "formalCharge": -1
+    },
+    {
+      "unit": 1,
+      "name": "H113",
+      "cgenffName": "H12",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "H114",
+      "cgenffName": "H13",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "H115",
+      "cgenffName": "H14",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "H116",
+      "cgenffName": "H15",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "H117",
+      "cgenffName": "H16",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "H118",
+      "cgenffName": "H17",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "H119",
+      "cgenffName": "H18",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "H120",
+      "cgenffName": "H19",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "H121",
+      "cgenffName": "H20",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "H122",
+      "cgenffName": "H21",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "H123",
+      "cgenffName": "H22",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "H124",
+      "cgenffName": "H23",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 1,
+      "name": "H125",
+      "cgenffName": "H24",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "C6",
+      "cgenffName": "C25",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "C7",
+      "cgenffName": "C26",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "C8",
+      "cgenffName": "C27",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "O36",
+      "cgenffName": "O28",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "O34",
+      "cgenffName": "O29",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "C106",
+      "cgenffName": "C30",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "C107",
+      "cgenffName": "C31",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "N108",
+      "cgenffName": "N32",
+      "element": "N",
+      "formalCharge": 1
+    },
+    {
+      "unit": 2,
+      "name": "C109",
+      "cgenffName": "C33",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "C110",
+      "cgenffName": "C34",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "O111",
+      "cgenffName": "O35",
+      "element": "O",
+      "formalCharge": -1
+    },
+    {
+      "unit": 2,
+      "name": "H113",
+      "cgenffName": "H36",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "H114",
+      "cgenffName": "H37",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "H115",
+      "cgenffName": "H38",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "H116",
+      "cgenffName": "H39",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "H117",
+      "cgenffName": "H40",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "H118",
+      "cgenffName": "H41",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "H119",
+      "cgenffName": "H42",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "H120",
+      "cgenffName": "H43",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "H121",
+      "cgenffName": "H44",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "H122",
+      "cgenffName": "H45",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "H123",
+      "cgenffName": "H46",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "H124",
+      "cgenffName": "H47",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 2,
+      "name": "H125",
+      "cgenffName": "H48",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "C6",
+      "cgenffName": "C49",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "C7",
+      "cgenffName": "C50",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "C8",
+      "cgenffName": "C51",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "O36",
+      "cgenffName": "O52",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "O34",
+      "cgenffName": "O53",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "C106",
+      "cgenffName": "C54",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "C107",
+      "cgenffName": "C55",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "N108",
+      "cgenffName": "N56",
+      "element": "N",
+      "formalCharge": 1
+    },
+    {
+      "unit": 3,
+      "name": "C109",
+      "cgenffName": "C57",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "C110",
+      "cgenffName": "C58",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "O111",
+      "cgenffName": "O59",
+      "element": "O",
+      "formalCharge": -1
+    },
+    {
+      "unit": 3,
+      "name": "H113",
+      "cgenffName": "H60",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "H114",
+      "cgenffName": "H61",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "H115",
+      "cgenffName": "H62",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "H116",
+      "cgenffName": "H63",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "H117",
+      "cgenffName": "H64",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "H118",
+      "cgenffName": "H65",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "H119",
+      "cgenffName": "H66",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "H120",
+      "cgenffName": "H67",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "H121",
+      "cgenffName": "H68",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "H122",
+      "cgenffName": "H69",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "H123",
+      "cgenffName": "H70",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "H124",
+      "cgenffName": "H71",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 3,
+      "name": "H125",
+      "cgenffName": "H72",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "C6",
+      "cgenffName": "C73",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "C7",
+      "cgenffName": "C74",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "C8",
+      "cgenffName": "C75",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "O36",
+      "cgenffName": "O76",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "O34",
+      "cgenffName": "O77",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "C106",
+      "cgenffName": "C78",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "C107",
+      "cgenffName": "C79",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "N108",
+      "cgenffName": "N80",
+      "element": "N",
+      "formalCharge": 1
+    },
+    {
+      "unit": 4,
+      "name": "C109",
+      "cgenffName": "C81",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "C110",
+      "cgenffName": "C82",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "O111",
+      "cgenffName": "O83",
+      "element": "O",
+      "formalCharge": -1
+    },
+    {
+      "unit": 4,
+      "name": "H113",
+      "cgenffName": "H84",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "H114",
+      "cgenffName": "H85",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "H115",
+      "cgenffName": "H86",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "H116",
+      "cgenffName": "H87",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "H117",
+      "cgenffName": "H88",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "H118",
+      "cgenffName": "H89",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "H119",
+      "cgenffName": "H90",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "H120",
+      "cgenffName": "H91",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "H121",
+      "cgenffName": "H92",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "H122",
+      "cgenffName": "H93",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "H123",
+      "cgenffName": "H94",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "H124",
+      "cgenffName": "H95",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 4,
+      "name": "H125",
+      "cgenffName": "H96",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "C6",
+      "cgenffName": "C97",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "C7",
+      "cgenffName": "C98",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "C8",
+      "cgenffName": "C99",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "O36",
+      "cgenffName": "O100",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "O34",
+      "cgenffName": "O101",
+      "element": "O",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "C106",
+      "cgenffName": "C102",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "C107",
+      "cgenffName": "C103",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "N108",
+      "cgenffName": "N104",
+      "element": "N",
+      "formalCharge": 1
+    },
+    {
+      "unit": 5,
+      "name": "C109",
+      "cgenffName": "C105",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "C110",
+      "cgenffName": "C106",
+      "element": "C",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "O111",
+      "cgenffName": "O107",
+      "element": "O",
+      "formalCharge": -1
+    },
+    {
+      "unit": 5,
+      "name": "H113",
+      "cgenffName": "H108",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "H114",
+      "cgenffName": "H109",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "H115",
+      "cgenffName": "H110",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "H116",
+      "cgenffName": "H111",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "H117",
+      "cgenffName": "H112",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "H118",
+      "cgenffName": "H113",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "H119",
+      "cgenffName": "H114",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "H120",
+      "cgenffName": "H115",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "H121",
+      "cgenffName": "H116",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "H122",
+      "cgenffName": "H117",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "H123",
+      "cgenffName": "H118",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "H124",
+      "cgenffName": "H119",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 5,
+      "name": "H125",
+      "cgenffName": "H120",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 0,
+      "name": "START_H",
+      "cgenffName": "H121",
+      "element": "H",
+      "formalCharge": 0
+    },
+    {
+      "unit": 6,
+      "name": "END_H",
+      "cgenffName": "H122",
+      "element": "H",
+      "formalCharge": 0
+    }
+  ]
+}

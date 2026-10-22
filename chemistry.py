@@ -122,6 +122,8 @@ def coordinates(spec,methyl):
     return result
 
 def metadata(spec,methyl):
+    from cgenff_library import status
+    parameters=status(spec,methyl)
     mol,names=graph(spec,methyl)
     vinyl=monomer(spec,methyl)
     heavy=Chem.RemoveHs(vinyl)
@@ -135,11 +137,11 @@ def metadata(spec,methyl):
     return dict(headGroup=spec[0],linker=spec[1],spacer=spec[2],nomenclature=nomenclature(spec,methyl),
         monomerSmiles=Chem.MolToSmiles(heavy),monomerFormula=rdMolDescriptors.CalcMolFormula(vinyl),
         connectorCH2=2 if spec[1]=='ester' else 3,
-        referenceTemplate=ref,parameterized=bool(ref),formalCharge=Chem.GetFormalCharge(mol),
+        referenceTemplate=ref,parameterized=parameters['mdReady'],formalCharge=Chem.GetFormalCharge(mol),
         matchesOriginalItp=bool(ref) and methyl,
         repeatAtomCount=sum(elements.values()),repeatElements=dict(elements),
         repeatSmiles=repeat_smiles(spec,methyl),structureSvg=drawer.GetDrawingText(),
-        parameterStatus='source-template' if ref else 'unassigned',
+        parameterStatus='cgenff-charges' if parameters['chargesComplete'] else 'cgenff-pending',parameterization=parameters,
         chargePath={'CB':f'N+–(CH2){spec[2]}–C(=O)O−','SB':f'N+–(CH2){spec[2]}–S(=O)2O−',
           'PB':f'N+–(CH2){spec[2]}–O–P(=O)(O−)–OH',
           'sulfabetaine':f'N+–(CH2){spec[2]}–O–S(=O)2–O−',

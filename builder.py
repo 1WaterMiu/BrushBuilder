@@ -99,7 +99,7 @@ def build(key='CBAA', density='high', seed=0, repeats=20, methyl=True,head_group
     sub,sup,blocks,chains,box=template(key)
     keep=list(range(20)) if density=='high' else select_sites(chains,box,seed)
     converted=[restore_sub(c,sub,box) for i,c in enumerate(chains) if i not in keep]
-    generated=[make_chain(key,repeats,methyl,chains[i],None if ref else spec) for i in keep]
+    generated=[make_chain(key,repeats,methyl,chains[i],spec) for i in keep]
     molecules=[(b,sub) for b in blocks+converted]+generated
     sup=generated[0][1]
     atoms=[]; frozen=[]; charge=0; bonds=[]
@@ -115,7 +115,11 @@ def build(key='CBAA', density='high', seed=0, repeats=20, methyl=True,head_group
         bonds.extend([[offset+int(b[0])-1,offset+int(b[1])-1] for b in top['bonds']])
     area=box[0]*box[1]
     box=box[:]; box[2]=max(box[2],max(a['xyz'][2] for a in atoms)+4)
-    return dict(template=key,chemistry=chemical,parameterized=bool(ref),density=density,repeats=repeats,methyl=methyl,geometryVersion=VERSION if ref else HEAD_VERSION,sidechainOrientation='alternating reflection; identical sequence for every chain',box=box,area=area,chainCount=len(keep),graftDensity=len(keep)/area,subCount=140+len(converted),atoms=atoms,bonds=bonds,frozen=frozen,charge=charge if ref else None,keptSites=[i+1 for i in keep],removedSites=sorted(REMOVED_SITES) if density=='low' else [],topology=sup,topologyCounts={k:len(v) for k,v in sup.items()},missingIncludes=missing_includes(),status='generated',minimization=None)
+    from cgenff_library import status as parameter_status
+    chemical['parameterization']=parameter_status(spec,methyl,repeats)
+    complete=all(a['charge'] is not None for a in atoms)
+    chemical['parameterization']['chargesComplete']=complete
+    return dict(template=key,chemistry=chemical,parameterized=chemical['parameterization']['mdReady'],density=density,repeats=repeats,methyl=methyl,geometryVersion=HEAD_VERSION,sidechainOrientation='alternating reflection; identical sequence for every chain',box=box,area=area,chainCount=len(keep),graftDensity=len(keep)/area,subCount=140+len(converted),atoms=atoms,bonds=bonds,frozen=frozen,charge=charge if complete else None,keptSites=[i+1 for i in keep],removedSites=sorted(REMOVED_SITES) if density=='low' else [],topology=sup,topologyCounts={k:len(v) for k,v in sup.items()},missingIncludes=missing_includes(),status='generated',minimization=None)
 
 def catalog():
     result=[]

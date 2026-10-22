@@ -2,6 +2,18 @@
 
 A local web application for fixed-silica zwitterionic brush construction and real GROMACS minimization.
 
+## Current CGenFF migration status — 2026-10-21
+
+**This section supersedes the legacy parameter and MD descriptions below.** Website builds no longer use supplied template charges for organic atoms, except the explicitly approved Si–C interface (anchor C1/H4/H5). Silica charges and all fixed silica coordinates are preserved. No charge renormalization or manual alpha-H charge patch is applied.
+
+All 72 monomers and their 72 saturated pentamers have explicit-H MOL2/SDF inputs, atom maps and graph round-trip checks in `cgenff/inputs`. Actual CGenFF 5.0 web results are available for **17 monomers + 17 pentamers + 1 anchored pentamer = 35 molecules**. These cover all 16 CB combinations and SB/ester/spacer 1/no methyl. The anchored result is CB/amide/spacer 3/alpha methyl. All 35 output atom/bond graphs match their inputs and all enumerated bonds, angles, proper torsions and declared impropers have parameters in the downloaded streams. Penalties above 50 are retained in `cgenff/audit.json`; parameter completeness does not establish quantitative accuracy.
+
+The website reported its free-job limit; the user chose to wait for the weekly reset (Monday 00:00 UTC). Remaining results are not fabricated or obtained by reverting to template charges. No automatic retry is scheduled. `tools/prepare_cgenff.py` regenerates inputs; `tools/audit_cgenff.py` validates downloaded results and creates the library. Original ZIPs, input hashes, raw streams and atom maps are retained.
+
+For CB/amide/spacer 3/alpha methyl with N >= 5, all organic charges are mapped from the anchored pentamer, distinguishing first, interior and last units; chain charge remains zero. Other combinations retain only available interior/end assignments and mark unresolved atoms `UNASSIGNED`. Short chains need separate anchored contexts. Available CGenFF results supply ordered impropers, including CB carboxylates missing from the legacy construction. Structure ZIPs include available streams and atom maps.
+
+MD submission/export remains blocked until assembled-surface bonded/nonbonded compatibility and GROMACS checks are complete. Legacy MD jobs using template charges cannot be downloaded as new CGenFF results. The matching official CHARMM36/CGenFF 5.0 archive is retained for the next compatibility check; it has not replaced the supplied force field. Earlier GROMACS tests below validate only the legacy parameter set.
+
 ## Start
 
 Run in C:\personal\BrushBuilder:

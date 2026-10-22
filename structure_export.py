@@ -27,5 +27,13 @@ def archive_structure(model):
         z.writestr('monomer.svg',meta['structureSvg'])
         z.writestr('structure.json',json.dumps({k:v for k,v in model.items() if k!='chemistry'},indent=2))
         z.writestr('chemistry.json',json.dumps({k:v for k,v in meta.items() if k!='structureSvg'},indent=2))
-        z.writestr('README.txt','STRUCTURE ONLY. Not an MD-ready package.\nNew chemistry has no assigned partial charges or force-field atom types. Formal N+/O- charges in SDF describe chemistry, not MD partial charges.\nmonomer.sdf retains the vinyl double bond; repeat-capped.sdf is a saturated H-capped repeat. Both contain explicit hydrogens. Surface geometry uses polymerized single bonds.\nstructure.json bonds use zero-based global atom indices; topology uses one-based local indices. Angle/torsion entries describe graph connectivity only; they are not newly fitted parameters.\nSilica coordinates remain fixed.\n')
+        from cgenff_library import ROOT,key
+        base=key(spec,model['methyl'])
+        for suffix in ('monomer','pentamer','anchor5'):
+            for ext in ('.json','.str','.err'):
+                path=ROOT/'parsed'/(base+'_'+suffix+ext)
+                if path.exists():z.write(path,'cgenff/'+path.name)
+            path=ROOT/'inputs'/(base+'_'+suffix+'.json')
+            if path.exists():z.write(path,'cgenff/input-maps/'+path.name)
+        z.writestr('README.txt','STRUCTURE ONLY. Not an MD-ready package.\nAvailable CGenFF partial charges/types are recorded in structure.json; missing atoms remain UNASSIGNED. No template organic-charge fallback. Silica and anchor C1/H4/H5 retain the approved original interface parameters.\nFormal N+/O- charges in SDF describe chemistry, not MD partial charges.\nmonomer.sdf retains the vinyl double bond; repeat-capped.sdf is a saturated H-capped repeat. Both contain explicit hydrogens. Surface geometry uses polymerized single bonds.\nstructure.json bonds use zero-based global atom indices; topology uses one-based local indices. Bonded coverage, force-field version compatibility and minimization must pass before MD export.\nSilica coordinates remain fixed.\n')
     return memory.getvalue()

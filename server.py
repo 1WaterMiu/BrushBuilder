@@ -39,6 +39,9 @@ class Handler(SimpleHTTPRequestHandler):
                 else:
                     if record['status']!='completed': raise ValueError('Minimization not completed; MD-ready download is blocked')
                     from pathlib import Path
+                    previous=json.loads((Path(record['directory'])/'model.json').read_text())
+                    if 'parameterization' not in previous.get('chemistry',{}):
+                        raise ValueError('此旧任务使用模板电荷；当前 CGenFF-only 流程禁止作为新结果下载')
                     data=(Path(record['directory'])/('surface-md.zip' if url.path.endswith('download') else 'model.json')).read_bytes()
                     mime='application/zip' if url.path.endswith('download') else 'application/json'
             else: self.send_error(404); return
@@ -57,9 +60,10 @@ class Handler(SimpleHTTPRequestHandler):
             length=int(self.headers.get('Content-Length','0'))
             if not 0<length<4096: raise ValueError('Invalid request size')
             values=parameters(json.loads(self.rfile.read(length)))
-            from chemistry import reference
-            if not reference((values['head_group'],values['linker'],values['spacer'])):
-                raise ValueError('此组合尚未填充 partial charge 和力场类型；可以下载结构，不能运行 MD 最小化')
+            from cgenff_library import status
+            state=status((values['head_group'],values['linker'],values['spacer']),values['methyl'],values['repeats'])
+            if not state['mdReady']:
+                raise ValueError(state['reason'])
             data=json.dumps(dict(id=submit(values))).encode()
             self.send_response(202); self.send_header('Content-Type','application/json'); self.send_header('Content-Length',str(len(data))); self.end_headers(); self.wfile.write(data)
         except (ValueError,TypeError) as e: self.send_error(400,'Invalid request',str(e))

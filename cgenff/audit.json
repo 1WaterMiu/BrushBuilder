@@ -1,0 +1,1231 @@
+[
+  {
+    "file": "CB_ester_1_m0_monomer",
+    "atomCount": 29,
+    "bondCount": 28,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 28,
+        "ANGLES": 49,
+        "DIHEDRALS": 64,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -4.163336342344337e-17,
+    "unitCharges": {
+      "1": 0.0
+    },
+    "chargePenalty": 14.472,
+    "parameterPenalty": 13.2,
+    "inputSHA256": "08b004c7565831ee9a30e9fe3485e9d5bff9ac97cda6b6710f227c977197fbaa",
+    "resultSHA256": "2df72da74bca77b806c36e9b385ca7f7c3b1e80c4efdd55fc4de1b0a77d854d2",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_1_m0_pentamer",
+    "atomCount": 147,
+    "bondCount": 146,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 146,
+        "ANGLES": 275,
+        "DIHEDRALS": 391,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -1.6132928326584306e-16,
+    "unitCharges": {
+      "1": 0.014,
+      "2": 0.005,
+      "3": -0.0,
+      "4": -0.065,
+      "5": -0.134,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 14.472,
+    "parameterPenalty": 13.2,
+    "inputSHA256": "127f77a817e03e9e9674a605fd29924543cdbd52dc0632c29cabdbd6267af642",
+    "resultSHA256": "61fd53736c29a2a2118f4258d3daa3169dfd6f9b18585e03e891c0de57f2a4fb",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_1_m1_monomer",
+    "atomCount": 32,
+    "bondCount": 31,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 31,
+        "ANGLES": 55,
+        "DIHEDRALS": 70,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": 0.0,
+    "unitCharges": {
+      "1": -0.0
+    },
+    "chargePenalty": 17.076,
+    "parameterPenalty": 56.5,
+    "inputSHA256": "407797494e00c036e537816f775db840e5441f639ae7bc5d8970df54e717a504",
+    "resultSHA256": "b83d36da5b0d83567bf0548db2b9f2dd80081a9a660265b5380d8a95ab3b35ac",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_1_m1_pentamer",
+    "atomCount": 162,
+    "bondCount": 161,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 161,
+        "ANGLES": 305,
+        "DIHEDRALS": 436,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -1.734723475976807e-16,
+    "unitCharges": {
+      "1": 0.045,
+      "2": -0.003,
+      "3": -0.0,
+      "4": -0.008,
+      "5": -0.214,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 14.472,
+    "parameterPenalty": 13.2,
+    "inputSHA256": "3248a2422b13f6e469967e41aca6ade639ba9b85d9635605e7f8051763dca58e",
+    "resultSHA256": "e89bfe750580faa4ea67696d83078f13347fa951bb34fd27d48e98d783eca2bb",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_2_m0_monomer",
+    "atomCount": 32,
+    "bondCount": 31,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 31,
+        "ANGLES": 55,
+        "DIHEDRALS": 73,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": 4.163336342344337e-17,
+    "unitCharges": {
+      "1": -0.0
+    },
+    "chargePenalty": 7.714,
+    "parameterPenalty": 7.5,
+    "inputSHA256": "8a546ef07fa9d696c4b0be2646edaaa70034f000448c10e0c8e41704c434d971",
+    "resultSHA256": "37836006e726fae9486f118d7a34c346b81fe8adf70de94bf5186182282afc6e",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_2_m0_pentamer",
+    "atomCount": 162,
+    "bondCount": 161,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 161,
+        "ANGLES": 305,
+        "DIHEDRALS": 436,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": 2.5500435096859064e-16,
+    "unitCharges": {
+      "1": 0.014,
+      "2": 0.005,
+      "3": -0.0,
+      "4": -0.065,
+      "5": -0.134,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 7.714,
+    "parameterPenalty": 7.5,
+    "inputSHA256": "65cd266054a3c2c7d6230f7e2486d6856f08104c05951f41ba9c710ccb47e669",
+    "resultSHA256": "dfb6fd36fcc2a37492f4e9b00e14b430cd08449ac535006fee33ee7f5065d19d",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_2_m1_monomer",
+    "atomCount": 35,
+    "bondCount": 34,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 34,
+        "ANGLES": 61,
+        "DIHEDRALS": 79,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": 8.326672684688674e-17,
+    "unitCharges": {
+      "1": -0.0
+    },
+    "chargePenalty": 17.076,
+    "parameterPenalty": 56.5,
+    "inputSHA256": "e2844072ae3d2959408b2d7f566886e9d6a651e9d22d023b881b79ed74ead661",
+    "resultSHA256": "6e0a644b42259d2add45fc1eb1cbc8b1ae5ba9c356f926c1e4d8aad0ce915d7e",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_2_m1_pentamer",
+    "atomCount": 177,
+    "bondCount": 176,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 176,
+        "ANGLES": 335,
+        "DIHEDRALS": 481,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": 2.42861286636753e-16,
+    "unitCharges": {
+      "1": 0.045,
+      "2": -0.003,
+      "3": -0.0,
+      "4": -0.008,
+      "5": -0.214,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 7.714,
+    "parameterPenalty": 8.0,
+    "inputSHA256": "b602b5406b657b658ca66366e2b72c3c9242eebc6e983f0038977dd601a2d12a",
+    "resultSHA256": "09977886782c9991e2d60aa87fae429ffcb001c60e523e658a45bf9acaf76e7a",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_3_m0_monomer",
+    "atomCount": 35,
+    "bondCount": 34,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 34,
+        "ANGLES": 61,
+        "DIHEDRALS": 82,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -6.938893903907228e-17,
+    "unitCharges": {
+      "1": 0.0
+    },
+    "chargePenalty": 3.146,
+    "parameterPenalty": 4.0,
+    "inputSHA256": "4eeaf3a5874d9cece27f5dae58d7ea96f37622bcb42c12dcbc68e453521a7000",
+    "resultSHA256": "9d2cc8c9f4d8b1e0247c8deb243cf436ab2a84596615d996c40f4adf2c376aaa",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_3_m0_pentamer",
+    "atomCount": 177,
+    "bondCount": 176,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 176,
+        "ANGLES": 335,
+        "DIHEDRALS": 481,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -3.0010716134398763e-16,
+    "unitCharges": {
+      "1": 0.014,
+      "2": 0.005,
+      "3": 0.0,
+      "4": -0.065,
+      "5": -0.134,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 3.146,
+    "parameterPenalty": 0.6,
+    "inputSHA256": "8950a493001c5dea9a974fb646f9d200a2e408c72a276f85fd68df2570e92899",
+    "resultSHA256": "0df4e262c1ff1d27a13e2082cfeca1b4f7d73d51e62541ba9a0bf4fffd857fc1",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_3_m1_monomer",
+    "atomCount": 38,
+    "bondCount": 37,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 37,
+        "ANGLES": 67,
+        "DIHEDRALS": 88,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -2.7755575615628914e-17,
+    "unitCharges": {
+      "1": 0.0
+    },
+    "chargePenalty": 17.076,
+    "parameterPenalty": 56.5,
+    "inputSHA256": "a28aa0d67b41fa854e21235ae88df3e42de2ca4746836b215a4fb917fff0c643",
+    "resultSHA256": "3749860f27c8e09135cd65b17b42dac04b2a3141aa2421cfc81c708234e08a60",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_3_m1_pentamer",
+    "atomCount": 192,
+    "bondCount": 191,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 191,
+        "ANGLES": 365,
+        "DIHEDRALS": 526,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -3.122502256758253e-16,
+    "unitCharges": {
+      "1": 0.045,
+      "2": -0.003,
+      "3": -0.0,
+      "4": -0.008,
+      "5": -0.214,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 6.863,
+    "parameterPenalty": 8.0,
+    "inputSHA256": "52421f93d10a3a85ee31d6fc46df1eaa7d16d18a902147df7f849aab0e9c7b1e",
+    "resultSHA256": "4b8b268dac14e80a09cdd871aa8091de8f6b90e01c8d3b1ad6c27e210cc2e589",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_4_m0_monomer",
+    "atomCount": 38,
+    "bondCount": 37,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 37,
+        "ANGLES": 67,
+        "DIHEDRALS": 91,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -6.938893903907228e-17,
+    "unitCharges": {
+      "1": -0.0
+    },
+    "chargePenalty": 2.615,
+    "parameterPenalty": 4.0,
+    "inputSHA256": "de3a09923c6b463966a466b2ccd0b1687e9aea2b60f71fad26a0edd32910943b",
+    "resultSHA256": "ff10f71c877418752e23a2b224439c481503a9c21211269e1e272722b7497489",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_4_m0_pentamer",
+    "atomCount": 192,
+    "bondCount": 191,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 191,
+        "ANGLES": 365,
+        "DIHEDRALS": 526,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -3.0010716134398763e-16,
+    "unitCharges": {
+      "1": 0.014,
+      "2": 0.005,
+      "3": -0.0,
+      "4": -0.065,
+      "5": -0.134,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 0.312,
+    "parameterPenalty": 0.0,
+    "inputSHA256": "329f7d65ba1e4aad6719fa6bac8c9f3bf7dea8055f62b36fad08caee908a56a1",
+    "resultSHA256": "de39af3efb35488cdc0fe4f354148dee58b89099ff453f73226cde6ca80b0c2f",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_4_m1_monomer",
+    "atomCount": 41,
+    "bondCount": 40,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 40,
+        "ANGLES": 73,
+        "DIHEDRALS": 97,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -2.7755575615628914e-17,
+    "unitCharges": {
+      "1": -0.0
+    },
+    "chargePenalty": 17.076,
+    "parameterPenalty": 56.5,
+    "inputSHA256": "f64ec9dc660cbdf4637d96933cd21e52651ad68f0c62d24337684d71e8b47c78",
+    "resultSHA256": "41e2db91393da107399c302a06c28eba413a3904955aecd1de6212fa4bb45749",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_ester_4_m1_pentamer",
+    "atomCount": 207,
+    "bondCount": 206,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 206,
+        "ANGLES": 395,
+        "DIHEDRALS": 571,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -3.122502256758253e-16,
+    "unitCharges": {
+      "1": 0.045,
+      "2": -0.003,
+      "3": -0.0,
+      "4": -0.008,
+      "5": -0.214,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 6.863,
+    "parameterPenalty": 8.0,
+    "inputSHA256": "17c275faa70c884c11c1ad4f2a8cf33ea7187f79abd895dc252680b30cc427d0",
+    "resultSHA256": "fec97133e660a8c9375aed9a26ef7d0b21e2de9f909a9302c0a52619545c1675",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_1_m0_monomer",
+    "atomCount": 33,
+    "bondCount": 32,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 32,
+        "ANGLES": 57,
+        "DIHEDRALS": 78,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -4.336808689942018e-17,
+    "unitCharges": {
+      "1": 0.0
+    },
+    "chargePenalty": 14.472,
+    "parameterPenalty": 13.2,
+    "inputSHA256": "3f2976e46e57d5074ceb901e0e90e1a6acfc28ec43c6bfe49e89e1cd38c2e568",
+    "resultSHA256": "7adbf669be50d2192c67cb73aac1c775c63214d040fdd0327e0da3021582a592",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_1_m0_pentamer",
+    "atomCount": 167,
+    "bondCount": 166,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 166,
+        "ANGLES": 315,
+        "DIHEDRALS": 461,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -3.9898639947466563e-16,
+    "unitCharges": {
+      "1": -0.052,
+      "2": 0.005,
+      "3": 0.0,
+      "4": 0.028,
+      "5": -0.161,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 14.472,
+    "parameterPenalty": 13.2,
+    "inputSHA256": "f230e1208a7e919a541a1f9cc9f8d241519d86de8c07dd1a67dbc7ce9e4a335b",
+    "resultSHA256": "874a402b0859a0af47b22a734b3fef6b1bf2692b967dbb0b3496197e72d542d8",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_1_m1_monomer",
+    "atomCount": 36,
+    "bondCount": 35,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 35,
+        "ANGLES": 63,
+        "DIHEDRALS": 84,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": 2.0816681711721685e-17,
+    "unitCharges": {
+      "1": -0.0
+    },
+    "chargePenalty": 14.472,
+    "parameterPenalty": 13.2,
+    "inputSHA256": "0a0605fd32ef9bd9d3fc07569e1458de04d5a1fae5c26025fd39755e7aa68746",
+    "resultSHA256": "49266604fa6d641cad527aee323395ae2274077211602935e04e2194b9dfda12",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_1_m1_pentamer",
+    "atomCount": 182,
+    "bondCount": 181,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 181,
+        "ANGLES": 345,
+        "DIHEDRALS": 506,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -3.3306690738754696e-16,
+    "unitCharges": {
+      "1": -0.028,
+      "2": -0.003,
+      "3": -0.0,
+      "4": 0.026,
+      "5": -0.175,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 14.472,
+    "parameterPenalty": 13.2,
+    "inputSHA256": "120b63d476adccd2f78e65959402ea23294907fd2d78146efb83cd6bbcbeec32",
+    "resultSHA256": "28000906281e500d2b7cebaba721686e38c6064d5e638c0a838c155dc45a69ab",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_2_m0_monomer",
+    "atomCount": 36,
+    "bondCount": 35,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 35,
+        "ANGLES": 63,
+        "DIHEDRALS": 87,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": 3.9898639947466563e-17,
+    "unitCharges": {
+      "1": -0.0
+    },
+    "chargePenalty": 7.714,
+    "parameterPenalty": 7.5,
+    "inputSHA256": "1d7222174f6b57ad974c279a6914410742a66622b520b7c1fb339eec328c2f32",
+    "resultSHA256": "a8ccd0f60724b4c943680f2264e78256bfeffbb151d5ba7fd587b1ce8e1e3341",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_2_m0_pentamer",
+    "atomCount": 182,
+    "bondCount": 181,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 181,
+        "ANGLES": 345,
+        "DIHEDRALS": 506,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": 1.734723475976807e-17,
+    "unitCharges": {
+      "1": -0.052,
+      "2": 0.005,
+      "3": -0.0,
+      "4": 0.028,
+      "5": -0.161,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 7.714,
+    "parameterPenalty": 7.5,
+    "inputSHA256": "d0a2984e5fd81750742761dfc725cda9809bdfdb2644da6b1d40bd67e7c71fef",
+    "resultSHA256": "dce0b77d558ff578a25df2a489a9001163384c933b293468d48b68d82014b7ee",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_2_m1_monomer",
+    "atomCount": 39,
+    "bondCount": 38,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 38,
+        "ANGLES": 69,
+        "DIHEDRALS": 93,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": 1.0408340855860843e-16,
+    "unitCharges": {
+      "1": -0.0
+    },
+    "chargePenalty": 9.103,
+    "parameterPenalty": 7.5,
+    "inputSHA256": "418349568d63ec51e359c0b3d3597d75dc4d2dd522066becbc24335682e654b9",
+    "resultSHA256": "e6f88803ad6acb5733c86a3f01f3089708889ebf67d8647b523a936a97fe071a",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_2_m1_pentamer",
+    "atomCount": 197,
+    "bondCount": 196,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 196,
+        "ANGLES": 375,
+        "DIHEDRALS": 551,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": 8.326672684688674e-17,
+    "unitCharges": {
+      "1": -0.028,
+      "2": -0.003,
+      "3": -0.0,
+      "4": 0.026,
+      "5": -0.175,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 7.714,
+    "parameterPenalty": 7.5,
+    "inputSHA256": "69e94e1ac6c06745a92654052f607b9520832ee8f5712b6b17609e27522422b9",
+    "resultSHA256": "60babeaacde8b39372e0a8cc77ff3280e3d977b9bb063f8fa9ff8240523da86c",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_3_m0_monomer",
+    "atomCount": 39,
+    "bondCount": 38,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 38,
+        "ANGLES": 69,
+        "DIHEDRALS": 96,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -7.112366251504909e-17,
+    "unitCharges": {
+      "1": 0.0
+    },
+    "chargePenalty": 3.146,
+    "parameterPenalty": 4.0,
+    "inputSHA256": "d2981767206ee2017776f25b998b53e40008645fe1103d7743c5e8cea004a59e",
+    "resultSHA256": "b3effcfacfe6057739f41bf11070685c7584d82e80cbbfc735e9287aed6249cf",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_3_m0_pentamer",
+    "atomCount": 197,
+    "bondCount": 196,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 196,
+        "ANGLES": 375,
+        "DIHEDRALS": 551,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -5.377642775528102e-16,
+    "unitCharges": {
+      "1": -0.052,
+      "2": 0.005,
+      "3": -0.0,
+      "4": 0.028,
+      "5": -0.161,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 3.146,
+    "parameterPenalty": 2.6,
+    "inputSHA256": "3193dc39b9486285399cf691a918d6e233f563eaec34c948bef427b60841e90f",
+    "resultSHA256": "a45e281f52832c523bb13cca7c250f9d03461c10234b7cf1a986b3c6fe1f90f1",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_3_m1_monomer",
+    "atomCount": 42,
+    "bondCount": 41,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 41,
+        "ANGLES": 75,
+        "DIHEDRALS": 102,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -6.938893903907228e-18,
+    "unitCharges": {
+      "1": -0.0
+    },
+    "chargePenalty": 9.103,
+    "parameterPenalty": 6.0,
+    "inputSHA256": "21acc1163c74eda7258237832a6068d8079da36f861fea8a2aa42b499226ffc1",
+    "resultSHA256": "9d41290582aebfc2d1345ac8158626514a458074cd67b840e588a3ca006f059f",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_3_m1_pentamer",
+    "atomCount": 212,
+    "bondCount": 211,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 211,
+        "ANGLES": 405,
+        "DIHEDRALS": 596,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -4.718447854656915e-16,
+    "unitCharges": {
+      "1": -0.028,
+      "2": -0.003,
+      "3": -0.0,
+      "4": 0.026,
+      "5": -0.175,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 3.146,
+    "parameterPenalty": 2.6,
+    "inputSHA256": "44c4bed234782fa0f8c2141c8ebdeaf3483cbcaa41916dd8e20b072819f180e8",
+    "resultSHA256": "94db079e7c592d784de97e362ac6856aaabd7b963397633cde62e13951439589",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_4_m0_monomer",
+    "atomCount": 42,
+    "bondCount": 41,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 41,
+        "ANGLES": 75,
+        "DIHEDRALS": 105,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -7.112366251504909e-17,
+    "unitCharges": {
+      "1": -0.0
+    },
+    "chargePenalty": 2.849,
+    "parameterPenalty": 4.0,
+    "inputSHA256": "5d9e0b25913d3ecdb0eabe3017a83dfb6635973368573df0eebd60c0351b9c95",
+    "resultSHA256": "68cf7bd3b926eefb79a90582d4830abd91115eded63d796f59f8fe6e4045515b",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_4_m0_pentamer",
+    "atomCount": 212,
+    "bondCount": 211,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 211,
+        "ANGLES": 405,
+        "DIHEDRALS": 596,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -5.377642775528102e-16,
+    "unitCharges": {
+      "1": -0.052,
+      "2": 0.005,
+      "3": -0.0,
+      "4": 0.028,
+      "5": -0.161,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 1.457,
+    "parameterPenalty": 2.6,
+    "inputSHA256": "5410ba5566884b100d21fa1ddb955b7f55b3a33a8b95f1f6a5476bf3f41ded04",
+    "resultSHA256": "dc1fb020ace6df8c5b30e08a5ca2a2f68411f4fc4f56af079bb399434ff07629",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_4_m1_monomer",
+    "atomCount": 45,
+    "bondCount": 44,
+    "improperCount": 2,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 44,
+        "ANGLES": 81,
+        "DIHEDRALS": 111,
+        "IMPROPERS": 2
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -6.938893903907228e-18,
+    "unitCharges": {
+      "1": -0.0
+    },
+    "chargePenalty": 9.103,
+    "parameterPenalty": 6.0,
+    "inputSHA256": "e8fa27e251f47540cbf85a98a33d6cd87daf8e74bcc6360af8f9d30c08b04741",
+    "resultSHA256": "d5db8ad6dfb2147f97406db221e0b6a6a5dcc3a3c89d75147fcf14b1af05b278",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_4_m1_pentamer",
+    "atomCount": 227,
+    "bondCount": 226,
+    "improperCount": 10,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 226,
+        "ANGLES": 435,
+        "DIHEDRALS": 641,
+        "IMPROPERS": 10
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -4.718447854656915e-16,
+    "unitCharges": {
+      "1": -0.028,
+      "2": -0.003,
+      "3": -0.0,
+      "4": 0.026,
+      "5": -0.175,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 1.457,
+    "parameterPenalty": 2.6,
+    "inputSHA256": "8fcc1bc3fba7e9b956ee793d6a3f2ca2decae42c7423df680dec7e95531432b6",
+    "resultSHA256": "4ff003c72312fba65d12f2cfbe2fd7bcfc2454774ef8868af248069831688825",
+    "version": "5.0"
+  },
+  {
+    "file": "SB_ester_1_m0_monomer",
+    "atomCount": 30,
+    "bondCount": 29,
+    "improperCount": 1,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 29,
+        "ANGLES": 52,
+        "DIHEDRALS": 67,
+        "IMPROPERS": 1
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -9.71445146547012e-17,
+    "unitCharges": {
+      "1": 0.0
+    },
+    "chargePenalty": 43.134,
+    "parameterPenalty": 113.0,
+    "inputSHA256": "cf33be884e7a2ff9a40c6d8f6af6c45a1cf106a5404ee2d3ec674178af4495e6",
+    "resultSHA256": "6e90cf80c6f05ffda9646f1c2b0b8133b09219d62dccd46659c7dcd325c1d3dc",
+    "version": "5.0"
+  },
+  {
+    "file": "SB_ester_1_m0_pentamer",
+    "atomCount": 152,
+    "bondCount": 151,
+    "improperCount": 5,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 151,
+        "ANGLES": 290,
+        "DIHEDRALS": 406,
+        "IMPROPERS": 5
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -4.388850394221322e-16,
+    "unitCharges": {
+      "1": 0.014,
+      "2": 0.005,
+      "3": -0.0,
+      "4": -0.065,
+      "5": -0.134,
+      "0": 0.09,
+      "6": 0.09
+    },
+    "chargePenalty": 43.134,
+    "parameterPenalty": 113.0,
+    "inputSHA256": "6c090ff41ac06e4c8c1b36538d0f14ebd4cfc2f8d025cf47cce912f5dd2d09ec",
+    "resultSHA256": "77084e23a8796bc8882d005a49d95c1bbb259badeaf02ae75ceed677ef94db3a",
+    "version": "5.0"
+  },
+  {
+    "file": "CB_amide_3_m1_anchor5",
+    "atomCount": 234,
+    "bondCount": 233,
+    "improperCount": 11,
+    "bondedCoverage": {
+      "counts": {
+        "BONDS": 233,
+        "ANGLES": 447,
+        "DIHEDRALS": 657,
+        "IMPROPERS": 11
+      },
+      "missingTypes": {
+        "BONDS": [],
+        "ANGLES": [],
+        "DIHEDRALS": [],
+        "IMPROPERS": []
+      },
+      "complete": true
+    },
+    "atomMapExact": true,
+    "bondGraphExact": true,
+    "charge": -5.065392549852277e-16,
+    "unitCharges": {
+      "1": -0.003,
+      "2": -0.0,
+      "3": -0.0,
+      "4": 0.026,
+      "5": -0.175,
+      "6": 0.09,
+      "-1": -0.028,
+      "-2": 0.09
+    },
+    "chargePenalty": 3.146,
+    "parameterPenalty": 2.6,
+    "inputSHA256": "4c84bb11d1275c4b9f69d4ce54b1ce1287de9bb32440b9f5adcd0cab9c39413b",
+    "resultSHA256": "8809ca5514816bc8a1ed21844a8340f15c465ab7b3a6fe8e6c67663824ce5e55",
+    "version": "5.0"
+  }
+]

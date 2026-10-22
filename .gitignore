@@ -1,3 +1,6 @@
 __pycache__/
 output/
 *.log
+cgenff/charmm36-feb2026_cgenff-5.0.ff/
+cgenff/charmm36-feb2026_cgenff-5.0.ff.tgz
+cgenff/results/*/

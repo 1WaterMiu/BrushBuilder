@@ -1,0 +1,2612 @@
+[
+  {
+    "key": "CB_ester_1_m0",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "ester",
+      1
+    ],
+    "methyl": false,
+    "file": "CB_ester_1_m0_monomer.mol2",
+    "atoms": 29,
+    "bonds": 28,
+    "formalCharge": 0,
+    "formula": "C9H15NO4",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "08b004c7565831ee9a30e9fe3485e9d5bff9ac97cda6b6710f227c977197fbaa"
+  },
+  {
+    "key": "CB_ester_1_m0",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "ester",
+      1
+    ],
+    "methyl": false,
+    "file": "CB_ester_1_m0_pentamer.mol2",
+    "atoms": 147,
+    "bonds": 146,
+    "formalCharge": 0,
+    "formula": "C45H77N5O20",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CC(=O)[O-])C(=O)OCC[N+](C)(C)CC(=O)[O-])C(=O)OCC[N+](C)(C)CC(=O)[O-])C(=O)OCC[N+](C)(C)CC(=O)[O-])C(=O)OCC[N+](C)(C)CC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "127f77a817e03e9e9674a605fd29924543cdbd52dc0632c29cabdbd6267af642"
+  },
+  {
+    "key": "CB_ester_1_m1",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "ester",
+      1
+    ],
+    "methyl": true,
+    "file": "CB_ester_1_m1_monomer.mol2",
+    "atoms": 32,
+    "bonds": 31,
+    "formalCharge": 0,
+    "formula": "C10H17NO4",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "407797494e00c036e537816f775db840e5441f639ae7bc5d8970df54e717a504"
+  },
+  {
+    "key": "CB_ester_1_m1",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "ester",
+      1
+    ],
+    "methyl": true,
+    "file": "CB_ester_1_m1_pentamer.mol2",
+    "atoms": 162,
+    "bonds": 161,
+    "formalCharge": 0,
+    "formula": "C50H87N5O20",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CC(=O)[O-])C(=O)OCC[N+](C)(C)CC(=O)[O-])C(=O)OCC[N+](C)(C)CC(=O)[O-])C(=O)OCC[N+](C)(C)CC(=O)[O-])C(=O)OCC[N+](C)(C)CC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "3248a2422b13f6e469967e41aca6ade639ba9b85d9635605e7f8051763dca58e"
+  },
+  {
+    "key": "CB_ester_2_m0",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "ester",
+      2
+    ],
+    "methyl": false,
+    "file": "CB_ester_2_m0_monomer.mol2",
+    "atoms": 32,
+    "bonds": 31,
+    "formalCharge": 0,
+    "formula": "C10H17NO4",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "8a546ef07fa9d696c4b0be2646edaaa70034f000448c10e0c8e41704c434d971"
+  },
+  {
+    "key": "CB_ester_2_m0",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "ester",
+      2
+    ],
+    "methyl": false,
+    "file": "CB_ester_2_m0_pentamer.mol2",
+    "atoms": 162,
+    "bonds": 161,
+    "formalCharge": 0,
+    "formula": "C50H87N5O20",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CCC(=O)[O-])C(=O)OCC[N+](C)(C)CCC(=O)[O-])C(=O)OCC[N+](C)(C)CCC(=O)[O-])C(=O)OCC[N+](C)(C)CCC(=O)[O-])C(=O)OCC[N+](C)(C)CCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "65cd266054a3c2c7d6230f7e2486d6856f08104c05951f41ba9c710ccb47e669"
+  },
+  {
+    "key": "CB_ester_2_m1",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "ester",
+      2
+    ],
+    "methyl": true,
+    "file": "CB_ester_2_m1_monomer.mol2",
+    "atoms": 35,
+    "bonds": 34,
+    "formalCharge": 0,
+    "formula": "C11H19NO4",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "e2844072ae3d2959408b2d7f566886e9d6a651e9d22d023b881b79ed74ead661"
+  },
+  {
+    "key": "CB_ester_2_m1",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "ester",
+      2
+    ],
+    "methyl": true,
+    "file": "CB_ester_2_m1_pentamer.mol2",
+    "atoms": 177,
+    "bonds": 176,
+    "formalCharge": 0,
+    "formula": "C55H97N5O20",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CCC(=O)[O-])C(=O)OCC[N+](C)(C)CCC(=O)[O-])C(=O)OCC[N+](C)(C)CCC(=O)[O-])C(=O)OCC[N+](C)(C)CCC(=O)[O-])C(=O)OCC[N+](C)(C)CCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "b602b5406b657b658ca66366e2b72c3c9242eebc6e983f0038977dd601a2d12a"
+  },
+  {
+    "key": "CB_ester_3_m0",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "ester",
+      3
+    ],
+    "methyl": false,
+    "file": "CB_ester_3_m0_monomer.mol2",
+    "atoms": 35,
+    "bonds": 34,
+    "formalCharge": 0,
+    "formula": "C11H19NO4",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "4eeaf3a5874d9cece27f5dae58d7ea96f37622bcb42c12dcbc68e453521a7000"
+  },
+  {
+    "key": "CB_ester_3_m0",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "ester",
+      3
+    ],
+    "methyl": false,
+    "file": "CB_ester_3_m0_pentamer.mol2",
+    "atoms": 177,
+    "bonds": 176,
+    "formalCharge": 0,
+    "formula": "C55H97N5O20",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "8950a493001c5dea9a974fb646f9d200a2e408c72a276f85fd68df2570e92899"
+  },
+  {
+    "key": "CB_ester_3_m1",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "ester",
+      3
+    ],
+    "methyl": true,
+    "file": "CB_ester_3_m1_monomer.mol2",
+    "atoms": 38,
+    "bonds": 37,
+    "formalCharge": 0,
+    "formula": "C12H21NO4",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "a28aa0d67b41fa854e21235ae88df3e42de2ca4746836b215a4fb917fff0c643"
+  },
+  {
+    "key": "CB_ester_3_m1",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "ester",
+      3
+    ],
+    "methyl": true,
+    "file": "CB_ester_3_m1_pentamer.mol2",
+    "atoms": 192,
+    "bonds": 191,
+    "formalCharge": 0,
+    "formula": "C60H107N5O20",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "52421f93d10a3a85ee31d6fc46df1eaa7d16d18a902147df7f849aab0e9c7b1e"
+  },
+  {
+    "key": "CB_ester_4_m0",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "ester",
+      4
+    ],
+    "methyl": false,
+    "file": "CB_ester_4_m0_monomer.mol2",
+    "atoms": 38,
+    "bonds": 37,
+    "formalCharge": 0,
+    "formula": "C12H21NO4",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CCCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "de3a09923c6b463966a466b2ccd0b1687e9aea2b60f71fad26a0edd32910943b"
+  },
+  {
+    "key": "CB_ester_4_m0",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "ester",
+      4
+    ],
+    "methyl": false,
+    "file": "CB_ester_4_m0_pentamer.mol2",
+    "atoms": 192,
+    "bonds": 191,
+    "formalCharge": 0,
+    "formula": "C60H107N5O20",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CCCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "329f7d65ba1e4aad6719fa6bac8c9f3bf7dea8055f62b36fad08caee908a56a1"
+  },
+  {
+    "key": "CB_ester_4_m1",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "ester",
+      4
+    ],
+    "methyl": true,
+    "file": "CB_ester_4_m1_monomer.mol2",
+    "atoms": 41,
+    "bonds": 40,
+    "formalCharge": 0,
+    "formula": "C13H23NO4",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CCCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "f64ec9dc660cbdf4637d96933cd21e52651ad68f0c62d24337684d71e8b47c78"
+  },
+  {
+    "key": "CB_ester_4_m1",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "ester",
+      4
+    ],
+    "methyl": true,
+    "file": "CB_ester_4_m1_pentamer.mol2",
+    "atoms": 207,
+    "bonds": 206,
+    "formalCharge": 0,
+    "formula": "C65H117N5O20",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CCCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCCC(=O)[O-])C(=O)OCC[N+](C)(C)CCCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "17c275faa70c884c11c1ad4f2a8cf33ea7187f79abd895dc252680b30cc427d0"
+  },
+  {
+    "key": "CB_amide_1_m0",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "amide",
+      1
+    ],
+    "methyl": false,
+    "file": "CB_amide_1_m0_monomer.mol2",
+    "atoms": 33,
+    "bonds": 32,
+    "formalCharge": 0,
+    "formula": "C10H18N2O3",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "3f2976e46e57d5074ceb901e0e90e1a6acfc28ec43c6bfe49e89e1cd38c2e568"
+  },
+  {
+    "key": "CB_amide_1_m0",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "amide",
+      1
+    ],
+    "methyl": false,
+    "file": "CB_amide_1_m0_pentamer.mol2",
+    "atoms": 167,
+    "bonds": 166,
+    "formalCharge": 0,
+    "formula": "C50H92N10O15",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "f230e1208a7e919a541a1f9cc9f8d241519d86de8c07dd1a67dbc7ce9e4a335b"
+  },
+  {
+    "key": "CB_amide_1_m1",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "amide",
+      1
+    ],
+    "methyl": true,
+    "file": "CB_amide_1_m1_monomer.mol2",
+    "atoms": 36,
+    "bonds": 35,
+    "formalCharge": 0,
+    "formula": "C11H20N2O3",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "0a0605fd32ef9bd9d3fc07569e1458de04d5a1fae5c26025fd39755e7aa68746"
+  },
+  {
+    "key": "CB_amide_1_m1",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "amide",
+      1
+    ],
+    "methyl": true,
+    "file": "CB_amide_1_m1_pentamer.mol2",
+    "atoms": 182,
+    "bonds": 181,
+    "formalCharge": 0,
+    "formula": "C55H102N10O15",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "120b63d476adccd2f78e65959402ea23294907fd2d78146efb83cd6bbcbeec32"
+  },
+  {
+    "key": "CB_amide_2_m0",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "amide",
+      2
+    ],
+    "methyl": false,
+    "file": "CB_amide_2_m0_monomer.mol2",
+    "atoms": 36,
+    "bonds": 35,
+    "formalCharge": 0,
+    "formula": "C11H20N2O3",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "1d7222174f6b57ad974c279a6914410742a66622b520b7c1fb339eec328c2f32"
+  },
+  {
+    "key": "CB_amide_2_m0",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "amide",
+      2
+    ],
+    "methyl": false,
+    "file": "CB_amide_2_m0_pentamer.mol2",
+    "atoms": 182,
+    "bonds": 181,
+    "formalCharge": 0,
+    "formula": "C55H102N10O15",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "d0a2984e5fd81750742761dfc725cda9809bdfdb2644da6b1d40bd67e7c71fef"
+  },
+  {
+    "key": "CB_amide_2_m1",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "amide",
+      2
+    ],
+    "methyl": true,
+    "file": "CB_amide_2_m1_monomer.mol2",
+    "atoms": 39,
+    "bonds": 38,
+    "formalCharge": 0,
+    "formula": "C12H22N2O3",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "418349568d63ec51e359c0b3d3597d75dc4d2dd522066becbc24335682e654b9"
+  },
+  {
+    "key": "CB_amide_2_m1",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "amide",
+      2
+    ],
+    "methyl": true,
+    "file": "CB_amide_2_m1_pentamer.mol2",
+    "atoms": 197,
+    "bonds": 196,
+    "formalCharge": 0,
+    "formula": "C60H112N10O15",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "69e94e1ac6c06745a92654052f607b9520832ee8f5712b6b17609e27522422b9"
+  },
+  {
+    "key": "CB_amide_3_m0",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "amide",
+      3
+    ],
+    "methyl": false,
+    "file": "CB_amide_3_m0_monomer.mol2",
+    "atoms": 39,
+    "bonds": 38,
+    "formalCharge": 0,
+    "formula": "C12H22N2O3",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "d2981767206ee2017776f25b998b53e40008645fe1103d7743c5e8cea004a59e"
+  },
+  {
+    "key": "CB_amide_3_m0",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "amide",
+      3
+    ],
+    "methyl": false,
+    "file": "CB_amide_3_m0_pentamer.mol2",
+    "atoms": 197,
+    "bonds": 196,
+    "formalCharge": 0,
+    "formula": "C60H112N10O15",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "3193dc39b9486285399cf691a918d6e233f563eaec34c948bef427b60841e90f"
+  },
+  {
+    "key": "CB_amide_3_m1",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "amide",
+      3
+    ],
+    "methyl": true,
+    "file": "CB_amide_3_m1_monomer.mol2",
+    "atoms": 42,
+    "bonds": 41,
+    "formalCharge": 0,
+    "formula": "C13H24N2O3",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "21acc1163c74eda7258237832a6068d8079da36f861fea8a2aa42b499226ffc1"
+  },
+  {
+    "key": "CB_amide_3_m1",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "amide",
+      3
+    ],
+    "methyl": true,
+    "file": "CB_amide_3_m1_pentamer.mol2",
+    "atoms": 212,
+    "bonds": 211,
+    "formalCharge": 0,
+    "formula": "C65H122N10O15",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "44c4bed234782fa0f8c2141c8ebdeaf3483cbcaa41916dd8e20b072819f180e8"
+  },
+  {
+    "key": "CB_amide_4_m0",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "amide",
+      4
+    ],
+    "methyl": false,
+    "file": "CB_amide_4_m0_monomer.mol2",
+    "atoms": 42,
+    "bonds": 41,
+    "formalCharge": 0,
+    "formula": "C13H24N2O3",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CCCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "5d9e0b25913d3ecdb0eabe3017a83dfb6635973368573df0eebd60c0351b9c95"
+  },
+  {
+    "key": "CB_amide_4_m0",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "amide",
+      4
+    ],
+    "methyl": false,
+    "file": "CB_amide_4_m0_pentamer.mol2",
+    "atoms": 212,
+    "bonds": 211,
+    "formalCharge": 0,
+    "formula": "C65H122N10O15",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CCCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "5410ba5566884b100d21fa1ddb955b7f55b3a33a8b95f1f6a5476bf3f41ded04"
+  },
+  {
+    "key": "CB_amide_4_m1",
+    "kind": "monomer",
+    "spec": [
+      "CB",
+      "amide",
+      4
+    ],
+    "methyl": true,
+    "file": "CB_amide_4_m1_monomer.mol2",
+    "atoms": 45,
+    "bonds": 44,
+    "formalCharge": 0,
+    "formula": "C14H26N2O3",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CCCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "e8fa27e251f47540cbf85a98a33d6cd87daf8e74bcc6360af8f9d30c08b04741"
+  },
+  {
+    "key": "CB_amide_4_m1",
+    "kind": "pentamer",
+    "spec": [
+      "CB",
+      "amide",
+      4
+    ],
+    "methyl": true,
+    "file": "CB_amide_4_m1_pentamer.mol2",
+    "atoms": 227,
+    "bonds": 226,
+    "formalCharge": 0,
+    "formula": "C70H132N10O15",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CCCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "8fcc1bc3fba7e9b956ee793d6a3f2ca2decae42c7423df680dec7e95531432b6"
+  },
+  {
+    "key": "SB_ester_1_m0",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "ester",
+      1
+    ],
+    "methyl": false,
+    "file": "SB_ester_1_m0_monomer.mol2",
+    "atoms": 30,
+    "bonds": 29,
+    "formalCharge": 0,
+    "formula": "C8H15NO5S",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "cf33be884e7a2ff9a40c6d8f6af6c45a1cf106a5404ee2d3ec674178af4495e6"
+  },
+  {
+    "key": "SB_ester_1_m0",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "ester",
+      1
+    ],
+    "methyl": false,
+    "file": "SB_ester_1_m0_pentamer.mol2",
+    "atoms": 152,
+    "bonds": 151,
+    "formalCharge": 0,
+    "formula": "C40H77N5O25S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "6c090ff41ac06e4c8c1b36538d0f14ebd4cfc2f8d025cf47cce912f5dd2d09ec"
+  },
+  {
+    "key": "SB_ester_1_m1",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "ester",
+      1
+    ],
+    "methyl": true,
+    "file": "SB_ester_1_m1_monomer.mol2",
+    "atoms": 33,
+    "bonds": 32,
+    "formalCharge": 0,
+    "formula": "C9H17NO5S",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "d9776fe011ec4aaac234e72afe30cff29ede3689a7d8c9f6998ab3bd8b73efd3"
+  },
+  {
+    "key": "SB_ester_1_m1",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "ester",
+      1
+    ],
+    "methyl": true,
+    "file": "SB_ester_1_m1_pentamer.mol2",
+    "atoms": 167,
+    "bonds": 166,
+    "formalCharge": 0,
+    "formula": "C45H87N5O25S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "a5eb87e9b3c3530beb4dde46eda779d69b183407c0f39c79208d232699db2971"
+  },
+  {
+    "key": "SB_ester_2_m0",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "ester",
+      2
+    ],
+    "methyl": false,
+    "file": "SB_ester_2_m0_monomer.mol2",
+    "atoms": 33,
+    "bonds": 32,
+    "formalCharge": 0,
+    "formula": "C9H17NO5S",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "93e7f15a0f066ce50e2a132b93ca63a4a98c682b2d213d4cd8a592a057da3069"
+  },
+  {
+    "key": "SB_ester_2_m0",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "ester",
+      2
+    ],
+    "methyl": false,
+    "file": "SB_ester_2_m0_pentamer.mol2",
+    "atoms": 167,
+    "bonds": 166,
+    "formalCharge": 0,
+    "formula": "C45H87N5O25S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "d2252a752e2d1c873bb407cbf312ea11749583184b4c5d6b84987e973a901761"
+  },
+  {
+    "key": "SB_ester_2_m1",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "ester",
+      2
+    ],
+    "methyl": true,
+    "file": "SB_ester_2_m1_monomer.mol2",
+    "atoms": 36,
+    "bonds": 35,
+    "formalCharge": 0,
+    "formula": "C10H19NO5S",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "eb4b5ffa69e8d205c94b466dffbe832ba76b1d77540e49255e5df702685996f7"
+  },
+  {
+    "key": "SB_ester_2_m1",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "ester",
+      2
+    ],
+    "methyl": true,
+    "file": "SB_ester_2_m1_pentamer.mol2",
+    "atoms": 182,
+    "bonds": 181,
+    "formalCharge": 0,
+    "formula": "C50H97N5O25S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "db76d317f03d9ba10fe4321f52384d9b7589009b65347ad858ebbc6217a67bf3"
+  },
+  {
+    "key": "SB_ester_3_m0",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "ester",
+      3
+    ],
+    "methyl": false,
+    "file": "SB_ester_3_m0_monomer.mol2",
+    "atoms": 36,
+    "bonds": 35,
+    "formalCharge": 0,
+    "formula": "C10H19NO5S",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "7641cbf61720fc7574d555d906e3d1dfa77c5bcd0c0d74b3b7312e329ebeb2a9"
+  },
+  {
+    "key": "SB_ester_3_m0",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "ester",
+      3
+    ],
+    "methyl": false,
+    "file": "SB_ester_3_m0_pentamer.mol2",
+    "atoms": 182,
+    "bonds": 181,
+    "formalCharge": 0,
+    "formula": "C50H97N5O25S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "45edf04f187e5ad57dce9395489b88c77ae1a212aad98ec1d39ff0eeedabc8d6"
+  },
+  {
+    "key": "SB_ester_3_m1",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "ester",
+      3
+    ],
+    "methyl": true,
+    "file": "SB_ester_3_m1_monomer.mol2",
+    "atoms": 39,
+    "bonds": 38,
+    "formalCharge": 0,
+    "formula": "C11H21NO5S",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "e96518b455c6c403135b99fb20f4bffcd74a4e6218adf2d19f360219fce9d69f"
+  },
+  {
+    "key": "SB_ester_3_m1",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "ester",
+      3
+    ],
+    "methyl": true,
+    "file": "SB_ester_3_m1_pentamer.mol2",
+    "atoms": 197,
+    "bonds": 196,
+    "formalCharge": 0,
+    "formula": "C55H107N5O25S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "677c08ac15367d1dd699488c09c486a6d36625b8e011c9c5e15b3d5088605c61"
+  },
+  {
+    "key": "SB_ester_4_m0",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "ester",
+      4
+    ],
+    "methyl": false,
+    "file": "SB_ester_4_m0_monomer.mol2",
+    "atoms": 39,
+    "bonds": 38,
+    "formalCharge": 0,
+    "formula": "C11H21NO5S",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CCCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "64dd1933565e6a42ca91e775d43c0e9ea87ef95a0f30325d3cdd3ecf27196bce"
+  },
+  {
+    "key": "SB_ester_4_m0",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "ester",
+      4
+    ],
+    "methyl": false,
+    "file": "SB_ester_4_m0_pentamer.mol2",
+    "atoms": 197,
+    "bonds": 196,
+    "formalCharge": 0,
+    "formula": "C55H107N5O25S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "a5f95f4b18cc4763d36a52e7e8e40fa29ed576a0ad4eb2317e7cde77911455a7"
+  },
+  {
+    "key": "SB_ester_4_m1",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "ester",
+      4
+    ],
+    "methyl": true,
+    "file": "SB_ester_4_m1_monomer.mol2",
+    "atoms": 42,
+    "bonds": 41,
+    "formalCharge": 0,
+    "formula": "C12H23NO5S",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CCCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "72be7053e63b9144a53630088f4ada880c1e1e3181dde5ab4194e69a429cb8f3"
+  },
+  {
+    "key": "SB_ester_4_m1",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "ester",
+      4
+    ],
+    "methyl": true,
+    "file": "SB_ester_4_m1_pentamer.mol2",
+    "atoms": 212,
+    "bonds": 211,
+    "formalCharge": 0,
+    "formula": "C60H117N5O25S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "991c97c791ab11bd4e43dc1cae1725171be62e666f1a6aca55a8afd25b70306e"
+  },
+  {
+    "key": "SB_amide_1_m0",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "amide",
+      1
+    ],
+    "methyl": false,
+    "file": "SB_amide_1_m0_monomer.mol2",
+    "atoms": 34,
+    "bonds": 33,
+    "formalCharge": 0,
+    "formula": "C9H18N2O4S",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "f10fe586d75bcc2158cc159d62e80b124ea94b5aa2d0dec4ccd62ab0248342ef"
+  },
+  {
+    "key": "SB_amide_1_m0",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "amide",
+      1
+    ],
+    "methyl": false,
+    "file": "SB_amide_1_m0_pentamer.mol2",
+    "atoms": 172,
+    "bonds": 171,
+    "formalCharge": 0,
+    "formula": "C45H92N10O20S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "407d4670edb5d9ec11a0e7e65fc5c179d53d404d702c3a3f8f1d0f24f079b102"
+  },
+  {
+    "key": "SB_amide_1_m1",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "amide",
+      1
+    ],
+    "methyl": true,
+    "file": "SB_amide_1_m1_monomer.mol2",
+    "atoms": 37,
+    "bonds": 36,
+    "formalCharge": 0,
+    "formula": "C10H20N2O4S",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "9a8808cee2e5f251c8c5ccd176c75adb1dbda01eaeddd7c1f712775311306c9e"
+  },
+  {
+    "key": "SB_amide_1_m1",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "amide",
+      1
+    ],
+    "methyl": true,
+    "file": "SB_amide_1_m1_pentamer.mol2",
+    "atoms": 187,
+    "bonds": 186,
+    "formalCharge": 0,
+    "formula": "C50H102N10O20S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "0e47eee35e83f48466d717943ef9e3f9ccd4322b6d6b539b94e24b2d9f5ae2e4"
+  },
+  {
+    "key": "SB_amide_2_m0",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "amide",
+      2
+    ],
+    "methyl": false,
+    "file": "SB_amide_2_m0_monomer.mol2",
+    "atoms": 37,
+    "bonds": 36,
+    "formalCharge": 0,
+    "formula": "C10H20N2O4S",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "3f26aa9234ff971aa1460bf3422694298c5be0f1cae9a5991f582a53f1b03233"
+  },
+  {
+    "key": "SB_amide_2_m0",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "amide",
+      2
+    ],
+    "methyl": false,
+    "file": "SB_amide_2_m0_pentamer.mol2",
+    "atoms": 187,
+    "bonds": 186,
+    "formalCharge": 0,
+    "formula": "C50H102N10O20S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "b2eb84e86eabe2dffd62cb20f362b8ddd3afca1c98c386ab75415ab79235c3a6"
+  },
+  {
+    "key": "SB_amide_2_m1",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "amide",
+      2
+    ],
+    "methyl": true,
+    "file": "SB_amide_2_m1_monomer.mol2",
+    "atoms": 40,
+    "bonds": 39,
+    "formalCharge": 0,
+    "formula": "C11H22N2O4S",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "0dee7962fc15db0082df95e2f4b18bee4bb602675004209ec61ebd1a5145ebe7"
+  },
+  {
+    "key": "SB_amide_2_m1",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "amide",
+      2
+    ],
+    "methyl": true,
+    "file": "SB_amide_2_m1_pentamer.mol2",
+    "atoms": 202,
+    "bonds": 201,
+    "formalCharge": 0,
+    "formula": "C55H112N10O20S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "b2ae8325aad541c47108f5f5934bbeb5061cab63f68f094fb8c41f2162dbe3ac"
+  },
+  {
+    "key": "SB_amide_3_m0",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "amide",
+      3
+    ],
+    "methyl": false,
+    "file": "SB_amide_3_m0_monomer.mol2",
+    "atoms": 40,
+    "bonds": 39,
+    "formalCharge": 0,
+    "formula": "C11H22N2O4S",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "2875e5062a97a21ecf3f104b56e9e69e004a7c9c7d8c6d06e5330bf8825ee62f"
+  },
+  {
+    "key": "SB_amide_3_m0",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "amide",
+      3
+    ],
+    "methyl": false,
+    "file": "SB_amide_3_m0_pentamer.mol2",
+    "atoms": 202,
+    "bonds": 201,
+    "formalCharge": 0,
+    "formula": "C55H112N10O20S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "e2055c7e9d5c232e2ee77e0ca5b35e6611a8481b25c36193ea38f1c09a535d4f"
+  },
+  {
+    "key": "SB_amide_3_m1",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "amide",
+      3
+    ],
+    "methyl": true,
+    "file": "SB_amide_3_m1_monomer.mol2",
+    "atoms": 43,
+    "bonds": 42,
+    "formalCharge": 0,
+    "formula": "C12H24N2O4S",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "55676c023de4d762fce1c320b3318c1851616b5ae5af0b63c3a56626881feb3d"
+  },
+  {
+    "key": "SB_amide_3_m1",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "amide",
+      3
+    ],
+    "methyl": true,
+    "file": "SB_amide_3_m1_pentamer.mol2",
+    "atoms": 217,
+    "bonds": 216,
+    "formalCharge": 0,
+    "formula": "C60H122N10O20S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "1bf2bd03d956135c989df06fcab8ea521ee48246df035a33b472658a424a4dc7"
+  },
+  {
+    "key": "SB_amide_4_m0",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "amide",
+      4
+    ],
+    "methyl": false,
+    "file": "SB_amide_4_m0_monomer.mol2",
+    "atoms": 43,
+    "bonds": 42,
+    "formalCharge": 0,
+    "formula": "C12H24N2O4S",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CCCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "15715fd1792795c0d543ba1d8318abbbc6c8e01a8791ebb501d1d013389f23e4"
+  },
+  {
+    "key": "SB_amide_4_m0",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "amide",
+      4
+    ],
+    "methyl": false,
+    "file": "SB_amide_4_m0_pentamer.mol2",
+    "atoms": 217,
+    "bonds": 216,
+    "formalCharge": 0,
+    "formula": "C60H122N10O20S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "c4520e634b0c10f810b829ab4fc79e2e9008bfaf9f4f2cbd27183a878554999b"
+  },
+  {
+    "key": "SB_amide_4_m1",
+    "kind": "monomer",
+    "spec": [
+      "SB",
+      "amide",
+      4
+    ],
+    "methyl": true,
+    "file": "SB_amide_4_m1_monomer.mol2",
+    "atoms": 46,
+    "bonds": 45,
+    "formalCharge": 0,
+    "formula": "C13H26N2O4S",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CCCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "d309523aa73c7d8d91a764880042e5858c294845fc7aa3edccf2d47ff397f215"
+  },
+  {
+    "key": "SB_amide_4_m1",
+    "kind": "pentamer",
+    "spec": [
+      "SB",
+      "amide",
+      4
+    ],
+    "methyl": true,
+    "file": "SB_amide_4_m1_pentamer.mol2",
+    "atoms": 232,
+    "bonds": 231,
+    "formalCharge": 0,
+    "formula": "C65H132N10O20S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "d2d31d55281d758ae3cbbbbe0c27af72984137c5670270f86d5ca15a12f970f2"
+  },
+  {
+    "key": "PB_ester_1_m0",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "ester",
+      1
+    ],
+    "methyl": false,
+    "file": "PB_ester_1_m0_monomer.mol2",
+    "atoms": 32,
+    "bonds": 31,
+    "formalCharge": 0,
+    "formula": "C8H16NO6P",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)COP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "6a1cab7e02f6872f4dc84824b6984361fa231e038e72a9a7d9564e3f299a21f9"
+  },
+  {
+    "key": "PB_ester_1_m0",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "ester",
+      1
+    ],
+    "methyl": false,
+    "file": "PB_ester_1_m0_pentamer.mol2",
+    "atoms": 162,
+    "bonds": 161,
+    "formalCharge": 0,
+    "formula": "C40H82N5O30P5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)COP(=O)([O-])O)C(=O)OCC[N+](C)(C)COP(=O)([O-])O)C(=O)OCC[N+](C)(C)COP(=O)([O-])O)C(=O)OCC[N+](C)(C)COP(=O)([O-])O)C(=O)OCC[N+](C)(C)COP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "af9a4e44cbea9b64b5aeec3b862958084a551b2a7e15c46ea33b92ea7797c0f5"
+  },
+  {
+    "key": "PB_ester_1_m1",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "ester",
+      1
+    ],
+    "methyl": true,
+    "file": "PB_ester_1_m1_monomer.mol2",
+    "atoms": 35,
+    "bonds": 34,
+    "formalCharge": 0,
+    "formula": "C9H18NO6P",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)COP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "94efaaa6296a74765d06d161e4d82a80a1a61671fe14cbd73aea1aa8dda65098"
+  },
+  {
+    "key": "PB_ester_1_m1",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "ester",
+      1
+    ],
+    "methyl": true,
+    "file": "PB_ester_1_m1_pentamer.mol2",
+    "atoms": 177,
+    "bonds": 176,
+    "formalCharge": 0,
+    "formula": "C45H92N5O30P5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)COP(=O)([O-])O)C(=O)OCC[N+](C)(C)COP(=O)([O-])O)C(=O)OCC[N+](C)(C)COP(=O)([O-])O)C(=O)OCC[N+](C)(C)COP(=O)([O-])O)C(=O)OCC[N+](C)(C)COP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "1b2c4a80140f4a8733884096a1fd65a0b44bcac46e127d53ccc3bfb3c757a61a"
+  },
+  {
+    "key": "PB_ester_2_m0",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "ester",
+      2
+    ],
+    "methyl": false,
+    "file": "PB_ester_2_m0_monomer.mol2",
+    "atoms": 35,
+    "bonds": 34,
+    "formalCharge": 0,
+    "formula": "C9H18NO6P",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "39e2687df6b639c22d15987501a376a82416ffd85d790183b1c77a64eaa64a14"
+  },
+  {
+    "key": "PB_ester_2_m0",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "ester",
+      2
+    ],
+    "methyl": false,
+    "file": "PB_ester_2_m0_pentamer.mol2",
+    "atoms": 177,
+    "bonds": 176,
+    "formalCharge": 0,
+    "formula": "C45H92N5O30P5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "ed9db7e7a3bd591b7fb604b26d0dfb503ffaaaf44d5484a889a967eee5bde1b1"
+  },
+  {
+    "key": "PB_ester_2_m1",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "ester",
+      2
+    ],
+    "methyl": true,
+    "file": "PB_ester_2_m1_monomer.mol2",
+    "atoms": 38,
+    "bonds": 37,
+    "formalCharge": 0,
+    "formula": "C10H20NO6P",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "82061b57108140eb1484db0c75a1a2d1062f724f1f453a1f8856a215669bd5dc"
+  },
+  {
+    "key": "PB_ester_2_m1",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "ester",
+      2
+    ],
+    "methyl": true,
+    "file": "PB_ester_2_m1_pentamer.mol2",
+    "atoms": 192,
+    "bonds": 191,
+    "formalCharge": 0,
+    "formula": "C50H102N5O30P5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "f8fc6178f6074a40c43e0d20c8d78d30c6bae2858dca9ec83a793d660c8d7a48"
+  },
+  {
+    "key": "PB_ester_3_m0",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "ester",
+      3
+    ],
+    "methyl": false,
+    "file": "PB_ester_3_m0_monomer.mol2",
+    "atoms": 38,
+    "bonds": 37,
+    "formalCharge": 0,
+    "formula": "C10H20NO6P",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "2ed96ca4b13ee07d230cbd3f845d0e4ce12b4ca7128d54857667437b28afc04c"
+  },
+  {
+    "key": "PB_ester_3_m0",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "ester",
+      3
+    ],
+    "methyl": false,
+    "file": "PB_ester_3_m0_pentamer.mol2",
+    "atoms": 192,
+    "bonds": 191,
+    "formalCharge": 0,
+    "formula": "C50H102N5O30P5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "e46670bc52b36b1037dad119ce7bf419db1bc45aab70b9bc693201ff7afccd65"
+  },
+  {
+    "key": "PB_ester_3_m1",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "ester",
+      3
+    ],
+    "methyl": true,
+    "file": "PB_ester_3_m1_monomer.mol2",
+    "atoms": 41,
+    "bonds": 40,
+    "formalCharge": 0,
+    "formula": "C11H22NO6P",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "c49bcb65ebdba9cd75ad1939a7d3af351f08966b13ea23d7257837ed405f05a1"
+  },
+  {
+    "key": "PB_ester_3_m1",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "ester",
+      3
+    ],
+    "methyl": true,
+    "file": "PB_ester_3_m1_pentamer.mol2",
+    "atoms": 207,
+    "bonds": 206,
+    "formalCharge": 0,
+    "formula": "C55H112N5O30P5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "21d691d0f5d6e1d74178eaa22b8e6aa60927c8b62ac4596c9cdd658a532d9ddf"
+  },
+  {
+    "key": "PB_ester_4_m0",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "ester",
+      4
+    ],
+    "methyl": false,
+    "file": "PB_ester_4_m0_monomer.mol2",
+    "atoms": 41,
+    "bonds": 40,
+    "formalCharge": 0,
+    "formula": "C11H22NO6P",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CCCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "8ab86adf67650ef07e3572220bb4af68a20b1a707161c2b412aacf8e4c580eb5"
+  },
+  {
+    "key": "PB_ester_4_m0",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "ester",
+      4
+    ],
+    "methyl": false,
+    "file": "PB_ester_4_m0_pentamer.mol2",
+    "atoms": 207,
+    "bonds": 206,
+    "formalCharge": 0,
+    "formula": "C55H112N5O30P5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "683107080996e21c80c99e7af04ecf80b962caf110e0672c326364de8f21c04c"
+  },
+  {
+    "key": "PB_ester_4_m1",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "ester",
+      4
+    ],
+    "methyl": true,
+    "file": "PB_ester_4_m1_monomer.mol2",
+    "atoms": 44,
+    "bonds": 43,
+    "formalCharge": 0,
+    "formula": "C12H24NO6P",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CCCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "67432172ef3f194f5d31f5ce5dabde5d1eaf5290c9ee0ccc48f530b6a97ff583"
+  },
+  {
+    "key": "PB_ester_4_m1",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "ester",
+      4
+    ],
+    "methyl": true,
+    "file": "PB_ester_4_m1_pentamer.mol2",
+    "atoms": 222,
+    "bonds": 221,
+    "formalCharge": 0,
+    "formula": "C60H122N5O30P5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)OCC[N+](C)(C)CCCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "41bf9444c950d8a4f560483e43736d86e9d724f435e41c06fc9133a4ea878776"
+  },
+  {
+    "key": "PB_amide_1_m0",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "amide",
+      1
+    ],
+    "methyl": false,
+    "file": "PB_amide_1_m0_monomer.mol2",
+    "atoms": 36,
+    "bonds": 35,
+    "formalCharge": 0,
+    "formula": "C9H19N2O5P",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)COP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "a37990d89a749d3270bf922c195f630c71f789b240b57cd33816e1594d5c5db8"
+  },
+  {
+    "key": "PB_amide_1_m0",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "amide",
+      1
+    ],
+    "methyl": false,
+    "file": "PB_amide_1_m0_pentamer.mol2",
+    "atoms": 182,
+    "bonds": 181,
+    "formalCharge": 0,
+    "formula": "C45H97N10O25P5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)COP(=O)([O-])O)C(=O)NCCC[N+](C)(C)COP(=O)([O-])O)C(=O)NCCC[N+](C)(C)COP(=O)([O-])O)C(=O)NCCC[N+](C)(C)COP(=O)([O-])O)C(=O)NCCC[N+](C)(C)COP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "ac4d7ee87d7aaf9cb13dacdcaadba478a144f0c5a0de0e3e664738664990b80c"
+  },
+  {
+    "key": "PB_amide_1_m1",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "amide",
+      1
+    ],
+    "methyl": true,
+    "file": "PB_amide_1_m1_monomer.mol2",
+    "atoms": 39,
+    "bonds": 38,
+    "formalCharge": 0,
+    "formula": "C10H21N2O5P",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)COP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "bcac3d985a3a54b04c4499c981b50c9fc4dab7c00630d947a2ad55e2df1e87e7"
+  },
+  {
+    "key": "PB_amide_1_m1",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "amide",
+      1
+    ],
+    "methyl": true,
+    "file": "PB_amide_1_m1_pentamer.mol2",
+    "atoms": 197,
+    "bonds": 196,
+    "formalCharge": 0,
+    "formula": "C50H107N10O25P5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)COP(=O)([O-])O)C(=O)NCCC[N+](C)(C)COP(=O)([O-])O)C(=O)NCCC[N+](C)(C)COP(=O)([O-])O)C(=O)NCCC[N+](C)(C)COP(=O)([O-])O)C(=O)NCCC[N+](C)(C)COP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "6ee1a2ef6ba99744e8a200c840e7c5d34101ecca47eb59b75b8966930ec0d89c"
+  },
+  {
+    "key": "PB_amide_2_m0",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "amide",
+      2
+    ],
+    "methyl": false,
+    "file": "PB_amide_2_m0_monomer.mol2",
+    "atoms": 39,
+    "bonds": 38,
+    "formalCharge": 0,
+    "formula": "C10H21N2O5P",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "9bf9b1cb49d67488d0d5742a38cc6269a30f47e8c6fefb4226da77371a45e036"
+  },
+  {
+    "key": "PB_amide_2_m0",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "amide",
+      2
+    ],
+    "methyl": false,
+    "file": "PB_amide_2_m0_pentamer.mol2",
+    "atoms": 197,
+    "bonds": 196,
+    "formalCharge": 0,
+    "formula": "C50H107N10O25P5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "d77a64652c1f7d7c9835283cea01b13080f888a3d9bca6f986f9eede9e8ac1f7"
+  },
+  {
+    "key": "PB_amide_2_m1",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "amide",
+      2
+    ],
+    "methyl": true,
+    "file": "PB_amide_2_m1_monomer.mol2",
+    "atoms": 42,
+    "bonds": 41,
+    "formalCharge": 0,
+    "formula": "C11H23N2O5P",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "473361dc4564d57fc3abb496dc24682bf020f35489828bdd1ec7739f742c2a7d"
+  },
+  {
+    "key": "PB_amide_2_m1",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "amide",
+      2
+    ],
+    "methyl": true,
+    "file": "PB_amide_2_m1_pentamer.mol2",
+    "atoms": 212,
+    "bonds": 211,
+    "formalCharge": 0,
+    "formula": "C55H117N10O25P5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "fedbe203a7c810c6c84259a2e2e127791c25e896d8a8756c5ad23f8e80882c55"
+  },
+  {
+    "key": "PB_amide_3_m0",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "amide",
+      3
+    ],
+    "methyl": false,
+    "file": "PB_amide_3_m0_monomer.mol2",
+    "atoms": 42,
+    "bonds": 41,
+    "formalCharge": 0,
+    "formula": "C11H23N2O5P",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "585a54e90dc5e92fb53fd97e9b370981a5455baad5dea2089ef1763ca6ea2c1f"
+  },
+  {
+    "key": "PB_amide_3_m0",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "amide",
+      3
+    ],
+    "methyl": false,
+    "file": "PB_amide_3_m0_pentamer.mol2",
+    "atoms": 212,
+    "bonds": 211,
+    "formalCharge": 0,
+    "formula": "C55H117N10O25P5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "6d01bb9938f5037dc8010908a3409d5cb4c0f50e0caecb89ec6c4780b436077e"
+  },
+  {
+    "key": "PB_amide_3_m1",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "amide",
+      3
+    ],
+    "methyl": true,
+    "file": "PB_amide_3_m1_monomer.mol2",
+    "atoms": 45,
+    "bonds": 44,
+    "formalCharge": 0,
+    "formula": "C12H25N2O5P",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "d7c619520619033b6f0da93b5934ae7d2079bddaa91da13a2f98fe22db946c62"
+  },
+  {
+    "key": "PB_amide_3_m1",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "amide",
+      3
+    ],
+    "methyl": true,
+    "file": "PB_amide_3_m1_pentamer.mol2",
+    "atoms": 227,
+    "bonds": 226,
+    "formalCharge": 0,
+    "formula": "C60H127N10O25P5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "ff9e483155030b07b8c890b49860984630d93ae31d6de764edf06c29a74af0aa"
+  },
+  {
+    "key": "PB_amide_4_m0",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "amide",
+      4
+    ],
+    "methyl": false,
+    "file": "PB_amide_4_m0_monomer.mol2",
+    "atoms": 45,
+    "bonds": 44,
+    "formalCharge": 0,
+    "formula": "C12H25N2O5P",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CCCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "89aba25d799462938114d5945ae0d63b6bb4b40f4bd68321fc209e74e86afc27"
+  },
+  {
+    "key": "PB_amide_4_m0",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "amide",
+      4
+    ],
+    "methyl": false,
+    "file": "PB_amide_4_m0_pentamer.mol2",
+    "atoms": 227,
+    "bonds": 226,
+    "formalCharge": 0,
+    "formula": "C60H127N10O25P5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "28cca2031970e0b4b6182246cba2b90584fa079e8e841d75f7443747c2be15df"
+  },
+  {
+    "key": "PB_amide_4_m1",
+    "kind": "monomer",
+    "spec": [
+      "PB",
+      "amide",
+      4
+    ],
+    "methyl": true,
+    "file": "PB_amide_4_m1_monomer.mol2",
+    "atoms": 48,
+    "bonds": 47,
+    "formalCharge": 0,
+    "formula": "C13H27N2O5P",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CCCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "20c2fe205f2a5d213f1d7d0f61dcc941dde9d1aa271cd70f824899b1679254c2"
+  },
+  {
+    "key": "PB_amide_4_m1",
+    "kind": "pentamer",
+    "spec": [
+      "PB",
+      "amide",
+      4
+    ],
+    "methyl": true,
+    "file": "PB_amide_4_m1_pentamer.mol2",
+    "atoms": 242,
+    "bonds": 241,
+    "formalCharge": 0,
+    "formula": "C65H137N10O25P5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCCOP(=O)([O-])O)C(=O)NCCC[N+](C)(C)CCCCOP(=O)([O-])O",
+    "uffConverged": true,
+    "sha256": "c616315dc0f88ebb42ee68bd52cc7e65a248c03a7842aaec998e300f50a7c790"
+  },
+  {
+    "key": "sulfabetaine_ester_1_m0",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      1
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_ester_1_m0_monomer.mol2",
+    "atoms": 31,
+    "bonds": 30,
+    "formalCharge": 0,
+    "formula": "C8H15NO6S",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)COS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "2d238bab605685495f6372eb0d15ca15cf971699f95a9141458aff5abc3e4f8d"
+  },
+  {
+    "key": "sulfabetaine_ester_1_m0",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      1
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_ester_1_m0_pentamer.mol2",
+    "atoms": 157,
+    "bonds": 156,
+    "formalCharge": 0,
+    "formula": "C40H77N5O30S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)COS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "26e2a50aef5b8be026b29e7d860f845e5b29220f4d1c8fd7eaa622bf44061e59"
+  },
+  {
+    "key": "sulfabetaine_ester_1_m1",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      1
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_ester_1_m1_monomer.mol2",
+    "atoms": 34,
+    "bonds": 33,
+    "formalCharge": 0,
+    "formula": "C9H17NO6S",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)COS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "1acfbc9c6aa79800798cc1471df8d3e0f7ca5cdc952bf73546d2dd0b72355a7e"
+  },
+  {
+    "key": "sulfabetaine_ester_1_m1",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      1
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_ester_1_m1_pentamer.mol2",
+    "atoms": 172,
+    "bonds": 171,
+    "formalCharge": 0,
+    "formula": "C45H87N5O30S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)COS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "4887059c9853a0a4f0df36202d5f7f0944cd9f99ee63d98fe031bd4b3cc0fcc7"
+  },
+  {
+    "key": "sulfabetaine_ester_2_m0",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      2
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_ester_2_m0_monomer.mol2",
+    "atoms": 34,
+    "bonds": 33,
+    "formalCharge": 0,
+    "formula": "C9H17NO6S",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "8723788807f11378cb5e4c05863217fd768e43abbe3336f5ae6d60ac808dce70"
+  },
+  {
+    "key": "sulfabetaine_ester_2_m0",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      2
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_ester_2_m0_pentamer.mol2",
+    "atoms": 172,
+    "bonds": 171,
+    "formalCharge": 0,
+    "formula": "C45H87N5O30S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "4cebf171bc509b774dfa3869e672d338a1792f7c7f7d7f6dba1e294c10a4a59d"
+  },
+  {
+    "key": "sulfabetaine_ester_2_m1",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      2
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_ester_2_m1_monomer.mol2",
+    "atoms": 37,
+    "bonds": 36,
+    "formalCharge": 0,
+    "formula": "C10H19NO6S",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "6054fa9dc9853a4ae573681d577f41ea3c7bbe7b5d7b94895a001bb089ea7c3d"
+  },
+  {
+    "key": "sulfabetaine_ester_2_m1",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      2
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_ester_2_m1_pentamer.mol2",
+    "atoms": 187,
+    "bonds": 186,
+    "formalCharge": 0,
+    "formula": "C50H97N5O30S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "c8988678c445cd06cadf122987d1907ced7881a34f4b349b7f14fd9de2efd1ed"
+  },
+  {
+    "key": "sulfabetaine_ester_3_m0",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      3
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_ester_3_m0_monomer.mol2",
+    "atoms": 37,
+    "bonds": 36,
+    "formalCharge": 0,
+    "formula": "C10H19NO6S",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "c9c5482207cd9d3472ee1c98fed92e027640c1992f6bd1688232f04864d59613"
+  },
+  {
+    "key": "sulfabetaine_ester_3_m0",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      3
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_ester_3_m0_pentamer.mol2",
+    "atoms": 187,
+    "bonds": 186,
+    "formalCharge": 0,
+    "formula": "C50H97N5O30S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "a097b5be7c79b389ca80b4ad0a901775d3c2097d9267df33f0dea47ab8fd27da"
+  },
+  {
+    "key": "sulfabetaine_ester_3_m1",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      3
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_ester_3_m1_monomer.mol2",
+    "atoms": 40,
+    "bonds": 39,
+    "formalCharge": 0,
+    "formula": "C11H21NO6S",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "e89bbfa23babcdac3d62a61431afb2a2221e48e98bb7eeadf121959ea6844a80"
+  },
+  {
+    "key": "sulfabetaine_ester_3_m1",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      3
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_ester_3_m1_pentamer.mol2",
+    "atoms": 202,
+    "bonds": 201,
+    "formalCharge": 0,
+    "formula": "C55H107N5O30S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "666e2e3bf6b127fc49bd58ab93f142d03d79060cf5917bb9a9dc34968aadb858"
+  },
+  {
+    "key": "sulfabetaine_ester_4_m0",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      4
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_ester_4_m0_monomer.mol2",
+    "atoms": 40,
+    "bonds": 39,
+    "formalCharge": 0,
+    "formula": "C11H21NO6S",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)CCCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "1a36fe3b6a03b98b35000b166cbb860d72e094b91c2a71038b452796eaacd419"
+  },
+  {
+    "key": "sulfabetaine_ester_4_m0",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      4
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_ester_4_m0_pentamer.mol2",
+    "atoms": 202,
+    "bonds": 201,
+    "formalCharge": 0,
+    "formula": "C55H107N5O30S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "66be0cbd11206c995210d9ae07f1fccd7be3b24c6b0285d18354c983fcf6e3ab"
+  },
+  {
+    "key": "sulfabetaine_ester_4_m1",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      4
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_ester_4_m1_monomer.mol2",
+    "atoms": 43,
+    "bonds": 42,
+    "formalCharge": 0,
+    "formula": "C12H23NO6S",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)CCCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "deb2a0773fba3049edca6b1ba5b9ecf911706d390bc986e85f47edd833d764cd"
+  },
+  {
+    "key": "sulfabetaine_ester_4_m1",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "ester",
+      4
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_ester_4_m1_pentamer.mol2",
+    "atoms": 217,
+    "bonds": 216,
+    "formalCharge": 0,
+    "formula": "C60H117N5O30S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)OCC[N+](C)(C)CCCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "a0e5dd5f9e370ca635891b2e771624f358ed7ac57cba0d13946b9019ef7296a5"
+  },
+  {
+    "key": "sulfabetaine_amide_1_m0",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      1
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_amide_1_m0_monomer.mol2",
+    "atoms": 35,
+    "bonds": 34,
+    "formalCharge": 0,
+    "formula": "C9H18N2O5S",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)COS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "d311132fce19b83e2a41b8c39f21dfb4c42187041d425d020dd17321a38a8868"
+  },
+  {
+    "key": "sulfabetaine_amide_1_m0",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      1
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_amide_1_m0_pentamer.mol2",
+    "atoms": 177,
+    "bonds": 176,
+    "formalCharge": 0,
+    "formula": "C45H92N10O25S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)COS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "08d927f33c75729a98614dd9e193bcd098bb61552579759632b097be17b24abc"
+  },
+  {
+    "key": "sulfabetaine_amide_1_m1",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      1
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_amide_1_m1_monomer.mol2",
+    "atoms": 38,
+    "bonds": 37,
+    "formalCharge": 0,
+    "formula": "C10H20N2O5S",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)COS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "eda860e8ea9f917a01586500c276d0e030aff5ed5273d806da2c3c8b51b26814"
+  },
+  {
+    "key": "sulfabetaine_amide_1_m1",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      1
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_amide_1_m1_pentamer.mol2",
+    "atoms": 192,
+    "bonds": 191,
+    "formalCharge": 0,
+    "formula": "C50H102N10O25S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)COS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)COS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "bd7dde63d734555774ec69b95102c392cec4bc6b8c116bb08e4e33e0ddaccb69"
+  },
+  {
+    "key": "sulfabetaine_amide_2_m0",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      2
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_amide_2_m0_monomer.mol2",
+    "atoms": 38,
+    "bonds": 37,
+    "formalCharge": 0,
+    "formula": "C10H20N2O5S",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "a5b9745248832a0c2e50770b06fea1acb76bd8dba1eb4c1598dd5bae7e9f3085"
+  },
+  {
+    "key": "sulfabetaine_amide_2_m0",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      2
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_amide_2_m0_pentamer.mol2",
+    "atoms": 192,
+    "bonds": 191,
+    "formalCharge": 0,
+    "formula": "C50H102N10O25S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "aec993fd08eed30665cd4f48137694ea722b610be2531d841014d500f54bfb3a"
+  },
+  {
+    "key": "sulfabetaine_amide_2_m1",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      2
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_amide_2_m1_monomer.mol2",
+    "atoms": 41,
+    "bonds": 40,
+    "formalCharge": 0,
+    "formula": "C11H22N2O5S",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "65a35804d9b0657d6e3d2a0e8c8e8be9d4c50ff18cab79e6a9284fde31658814"
+  },
+  {
+    "key": "sulfabetaine_amide_2_m1",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      2
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_amide_2_m1_pentamer.mol2",
+    "atoms": 207,
+    "bonds": 206,
+    "formalCharge": 0,
+    "formula": "C55H112N10O25S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "715e02b92aa906c1471ac76a5d2ae173778403822db68125330ea22e541572f4"
+  },
+  {
+    "key": "sulfabetaine_amide_3_m0",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      3
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_amide_3_m0_monomer.mol2",
+    "atoms": 41,
+    "bonds": 40,
+    "formalCharge": 0,
+    "formula": "C11H22N2O5S",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "d2c2406944d63eb286fbdb336c1efd3f9663dc1bd9d6c081c4b0c98b586f9053"
+  },
+  {
+    "key": "sulfabetaine_amide_3_m0",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      3
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_amide_3_m0_pentamer.mol2",
+    "atoms": 207,
+    "bonds": 206,
+    "formalCharge": 0,
+    "formula": "C55H112N10O25S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "98d0c74cd719de9f23f98b53a475096db16d2093964ee341739f0ec9bdd28552"
+  },
+  {
+    "key": "sulfabetaine_amide_3_m1",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      3
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_amide_3_m1_monomer.mol2",
+    "atoms": 44,
+    "bonds": 43,
+    "formalCharge": 0,
+    "formula": "C12H24N2O5S",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "fc0f03073c59a55e57f8379726e4203144e7950543929bcca7bcc9838120df25"
+  },
+  {
+    "key": "sulfabetaine_amide_3_m1",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      3
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_amide_3_m1_pentamer.mol2",
+    "atoms": 222,
+    "bonds": 221,
+    "formalCharge": 0,
+    "formula": "C60H122N10O25S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "9f56e80546a4695d314bb5e8f2295c38050bd18b9e07721a0ced638ecd66ab76"
+  },
+  {
+    "key": "sulfabetaine_amide_4_m0",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      4
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_amide_4_m0_monomer.mol2",
+    "atoms": 44,
+    "bonds": 43,
+    "formalCharge": 0,
+    "formula": "C12H24N2O5S",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)CCCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "fd25a440af2749f153c6bb355e9ea20d50f3def7aaa41c6c981fc09f23f5d930"
+  },
+  {
+    "key": "sulfabetaine_amide_4_m0",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      4
+    ],
+    "methyl": false,
+    "file": "sulfabetaine_amide_4_m0_pentamer.mol2",
+    "atoms": 222,
+    "bonds": 221,
+    "formalCharge": 0,
+    "formula": "C60H122N10O25S5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "94d0feaeca575fa9418be93ea3440499731d34b3494d097e4001f51e283d2d38"
+  },
+  {
+    "key": "sulfabetaine_amide_4_m1",
+    "kind": "monomer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      4
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_amide_4_m1_monomer.mol2",
+    "atoms": 47,
+    "bonds": 46,
+    "formalCharge": 0,
+    "formula": "C13H26N2O5S",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)CCCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "e4269b87873b516391b2bdf7884dcce772dad33fa7796d1397161ea8f05354da"
+  },
+  {
+    "key": "sulfabetaine_amide_4_m1",
+    "kind": "pentamer",
+    "spec": [
+      "sulfabetaine",
+      "amide",
+      4
+    ],
+    "methyl": true,
+    "file": "sulfabetaine_amide_4_m1_pentamer.mol2",
+    "atoms": 237,
+    "bonds": 236,
+    "formalCharge": 0,
+    "formula": "C65H132N10O25S5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCOS(=O)(=O)[O-])C(=O)NCCC[N+](C)(C)CCCCOS(=O)(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "42c1990539c037f57ad483ed2895e129febc880bdf548bcf5a50e128d93932ac"
+  },
+  {
+    "key": "PC_ester_0_m0",
+    "kind": "monomer",
+    "spec": [
+      "PC",
+      "ester",
+      null
+    ],
+    "methyl": false,
+    "file": "PC_ester_0_m0_monomer.mol2",
+    "atoms": 38,
+    "bonds": 37,
+    "formalCharge": 0,
+    "formula": "C10H20NO6P",
+    "smiles": "C=CC(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C",
+    "uffConverged": true,
+    "sha256": "fc9749dc5f84e57e783d3ebc92cebcbeb7e6534cef1dcd6a8b9e241ec69c71bb"
+  },
+  {
+    "key": "PC_ester_0_m0",
+    "kind": "pentamer",
+    "spec": [
+      "PC",
+      "ester",
+      null
+    ],
+    "methyl": false,
+    "file": "PC_ester_0_m0_pentamer.mol2",
+    "atoms": 192,
+    "bonds": 191,
+    "formalCharge": 0,
+    "formula": "C50H102N5O30P5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C",
+    "uffConverged": true,
+    "sha256": "55c5498ec7b3af85ba516fdb95be302055469c5a6163b69f207ee313d92ec9c0"
+  },
+  {
+    "key": "PC_ester_0_m1",
+    "kind": "monomer",
+    "spec": [
+      "PC",
+      "ester",
+      null
+    ],
+    "methyl": true,
+    "file": "PC_ester_0_m1_monomer.mol2",
+    "atoms": 41,
+    "bonds": 40,
+    "formalCharge": 0,
+    "formula": "C11H22NO6P",
+    "smiles": "C=C(C)C(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C",
+    "uffConverged": true,
+    "sha256": "3725d1d4e34c0becb2488d405d37f4b8cbffb91906d272cb384fd64b66da4833"
+  },
+  {
+    "key": "PC_ester_0_m1",
+    "kind": "pentamer",
+    "spec": [
+      "PC",
+      "ester",
+      null
+    ],
+    "methyl": true,
+    "file": "PC_ester_0_m1_pentamer.mol2",
+    "atoms": 207,
+    "bonds": 206,
+    "formalCharge": 0,
+    "formula": "C55H112N5O30P5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)OCCOP(=O)([O-])OCC[N+](C)(C)C",
+    "uffConverged": true,
+    "sha256": "efe600298f188472bcdaec14dbe707cf7c4d694309d660fc908608b166426992"
+  },
+  {
+    "key": "PC_amide_0_m0",
+    "kind": "monomer",
+    "spec": [
+      "PC",
+      "amide",
+      null
+    ],
+    "methyl": false,
+    "file": "PC_amide_0_m0_monomer.mol2",
+    "atoms": 42,
+    "bonds": 41,
+    "formalCharge": 0,
+    "formula": "C11H23N2O5P",
+    "smiles": "C=CC(=O)NCCCOP(=O)([O-])OCC[N+](C)(C)C",
+    "uffConverged": true,
+    "sha256": "d7e85f66d33fb12e8ec1fa016b68f30f331b9e675b42ac4ef767549578f41c4c"
+  },
+  {
+    "key": "PC_amide_0_m0",
+    "kind": "pentamer",
+    "spec": [
+      "PC",
+      "amide",
+      null
+    ],
+    "methyl": false,
+    "file": "PC_amide_0_m0_pentamer.mol2",
+    "atoms": 212,
+    "bonds": 211,
+    "formalCharge": 0,
+    "formula": "C55H117N10O25P5",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)NCCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)NCCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)NCCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)NCCCOP(=O)([O-])OCC[N+](C)(C)C",
+    "uffConverged": true,
+    "sha256": "1e46f9a774ab943712d42ee3e3124b6fcdaddb6f65abafa9e3baac6ae8b4a041"
+  },
+  {
+    "key": "PC_amide_0_m1",
+    "kind": "monomer",
+    "spec": [
+      "PC",
+      "amide",
+      null
+    ],
+    "methyl": true,
+    "file": "PC_amide_0_m1_monomer.mol2",
+    "atoms": 45,
+    "bonds": 44,
+    "formalCharge": 0,
+    "formula": "C12H25N2O5P",
+    "smiles": "C=C(C)C(=O)NCCCOP(=O)([O-])OCC[N+](C)(C)C",
+    "uffConverged": true,
+    "sha256": "a78bc5c667299b843798269297d489c52bb0ff5a379af72ba8b3c1ede11bcdf2"
+  },
+  {
+    "key": "PC_amide_0_m1",
+    "kind": "pentamer",
+    "spec": [
+      "PC",
+      "amide",
+      null
+    ],
+    "methyl": true,
+    "file": "PC_amide_0_m1_pentamer.mol2",
+    "atoms": 227,
+    "bonds": 226,
+    "formalCharge": 0,
+    "formula": "C60H127N10O25P5",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)NCCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)NCCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)NCCCOP(=O)([O-])OCC[N+](C)(C)C)C(=O)NCCCOP(=O)([O-])OCC[N+](C)(C)C",
+    "uffConverged": true,
+    "sha256": "8f113c37896e811ea29ff1b8fcb0e85b5293701d19a3d56f4ad60d71ea2b9c5d"
+  },
+  {
+    "key": "TMAO_ester_0_m0",
+    "kind": "monomer",
+    "spec": [
+      "TMAO",
+      "ester",
+      null
+    ],
+    "methyl": false,
+    "file": "TMAO_ester_0_m0_monomer.mol2",
+    "atoms": 24,
+    "bonds": 23,
+    "formalCharge": 0,
+    "formula": "C7H13NO3",
+    "smiles": "C=CC(=O)OCC[N+](C)(C)[O-]",
+    "uffConverged": true,
+    "sha256": "d262d30d368b681404b5185d5cb973e74ac1f9958791eafa3bd367184be76ad0"
+  },
+  {
+    "key": "TMAO_ester_0_m0",
+    "kind": "pentamer",
+    "spec": [
+      "TMAO",
+      "ester",
+      null
+    ],
+    "methyl": false,
+    "file": "TMAO_ester_0_m0_pentamer.mol2",
+    "atoms": 122,
+    "bonds": 121,
+    "formalCharge": 0,
+    "formula": "C35H67N5O15",
+    "smiles": "CC(CC(CC(CC(CCC(=O)OCC[N+](C)(C)[O-])C(=O)OCC[N+](C)(C)[O-])C(=O)OCC[N+](C)(C)[O-])C(=O)OCC[N+](C)(C)[O-])C(=O)OCC[N+](C)(C)[O-]",
+    "uffConverged": true,
+    "sha256": "4f596a154ac654c3c2acc47ea43a66ce158c8a3f0759d25cf9bdf7dbf2e2d47c"
+  },
+  {
+    "key": "TMAO_ester_0_m1",
+    "kind": "monomer",
+    "spec": [
+      "TMAO",
+      "ester",
+      null
+    ],
+    "methyl": true,
+    "file": "TMAO_ester_0_m1_monomer.mol2",
+    "atoms": 27,
+    "bonds": 26,
+    "formalCharge": 0,
+    "formula": "C8H15NO3",
+    "smiles": "C=C(C)C(=O)OCC[N+](C)(C)[O-]",
+    "uffConverged": true,
+    "sha256": "58e870222cc0434cf09b0a22ea80241e4947bf22ff6a6ebbc52854cbd19e3b0c"
+  },
+  {
+    "key": "TMAO_ester_0_m1",
+    "kind": "pentamer",
+    "spec": [
+      "TMAO",
+      "ester",
+      null
+    ],
+    "methyl": true,
+    "file": "TMAO_ester_0_m1_pentamer.mol2",
+    "atoms": 137,
+    "bonds": 136,
+    "formalCharge": 0,
+    "formula": "C40H77N5O15",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)OCC[N+](C)(C)[O-])C(=O)OCC[N+](C)(C)[O-])C(=O)OCC[N+](C)(C)[O-])C(=O)OCC[N+](C)(C)[O-])C(=O)OCC[N+](C)(C)[O-]",
+    "uffConverged": true,
+    "sha256": "0ace39d1cf800b500ef40dfd57539dcbc2939adea0a007cd6380ad949a2e8277"
+  },
+  {
+    "key": "TMAO_amide_0_m0",
+    "kind": "monomer",
+    "spec": [
+      "TMAO",
+      "amide",
+      null
+    ],
+    "methyl": false,
+    "file": "TMAO_amide_0_m0_monomer.mol2",
+    "atoms": 28,
+    "bonds": 27,
+    "formalCharge": 0,
+    "formula": "C8H16N2O2",
+    "smiles": "C=CC(=O)NCCC[N+](C)(C)[O-]",
+    "uffConverged": true,
+    "sha256": "18462a51fdc532abbde6e04726f2b3f8d9b6b55f0d30dc4ad18cbe3ae1db06b7"
+  },
+  {
+    "key": "TMAO_amide_0_m0",
+    "kind": "pentamer",
+    "spec": [
+      "TMAO",
+      "amide",
+      null
+    ],
+    "methyl": false,
+    "file": "TMAO_amide_0_m0_pentamer.mol2",
+    "atoms": 142,
+    "bonds": 141,
+    "formalCharge": 0,
+    "formula": "C40H82N10O10",
+    "smiles": "CC(CC(CC(CC(CCC(=O)NCCC[N+](C)(C)[O-])C(=O)NCCC[N+](C)(C)[O-])C(=O)NCCC[N+](C)(C)[O-])C(=O)NCCC[N+](C)(C)[O-])C(=O)NCCC[N+](C)(C)[O-]",
+    "uffConverged": true,
+    "sha256": "8ae88a55a1e01f986ba1294557a1d0366031d70b5e770f5c044e348a37f81544"
+  },
+  {
+    "key": "TMAO_amide_0_m1",
+    "kind": "monomer",
+    "spec": [
+      "TMAO",
+      "amide",
+      null
+    ],
+    "methyl": true,
+    "file": "TMAO_amide_0_m1_monomer.mol2",
+    "atoms": 31,
+    "bonds": 30,
+    "formalCharge": 0,
+    "formula": "C9H18N2O2",
+    "smiles": "C=C(C)C(=O)NCCC[N+](C)(C)[O-]",
+    "uffConverged": true,
+    "sha256": "7b344a2a2f0a72c4fb466863d875bef99f17d4d29b34119d63a82c75e5d744e4"
+  },
+  {
+    "key": "TMAO_amide_0_m1",
+    "kind": "pentamer",
+    "spec": [
+      "TMAO",
+      "amide",
+      null
+    ],
+    "methyl": true,
+    "file": "TMAO_amide_0_m1_pentamer.mol2",
+    "atoms": 157,
+    "bonds": 156,
+    "formalCharge": 0,
+    "formula": "C45H92N10O10",
+    "smiles": "CC(CC(C)(CC(C)(CC(C)(CC(C)(C)C(=O)NCCC[N+](C)(C)[O-])C(=O)NCCC[N+](C)(C)[O-])C(=O)NCCC[N+](C)(C)[O-])C(=O)NCCC[N+](C)(C)[O-])C(=O)NCCC[N+](C)(C)[O-]",
+    "uffConverged": true,
+    "sha256": "0503cd552ee2de713300c5e651c3262672c9857cc6bfcb9448406ddb6c4b2a1f"
+  },
+  {
+    "key": "CB_amide_3_m1",
+    "kind": "anchor5",
+    "spec": [
+      "CB",
+      "amide",
+      3
+    ],
+    "methyl": true,
+    "file": "CB_amide_3_m1_anchor5.mol2",
+    "atoms": 234,
+    "bonds": 233,
+    "formalCharge": 0,
+    "formula": "C72H135N11O16",
+    "smiles": "CCCNC(=O)C(C)(C)CC(C)(CC(C)(CC(C)(CC(C)(CC(C)C(=O)NCCC[N+](C)(C)CCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCC(=O)[O-])C(=O)NCCC[N+](C)(C)CCCC(=O)[O-]",
+    "uffConverged": true,
+    "sha256": "4c84bb11d1275c4b9f69d4ce54b1ce1287de9bb32440b9f5adcd0cab9c39413b"
+  }
+]

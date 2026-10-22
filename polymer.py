@@ -136,7 +136,11 @@ def make_topology(key,n,methyl,chemistry=None):
     for g in groups[1:]:
         names=('C8','C7','N2','O36') if key=='CBAA' else ('C8','C7','O36','O34')
         improper.append([str(g[x]) for x in names]+['2'])
-    return dict(moleculetype=[['BRUSH','3']],atoms=atoms,bonds=[list(map(str,b))+['1'] for b in edges],pairs=[list(map(str,p))+['1'] for p in sorted(pairs)],angles=angles,dihedrals=proper+improper),groups
+    topology=dict(moleculetype=[['BRUSH','3']],atoms=atoms,bonds=[list(map(str,b))+['1'] for b in edges],pairs=[list(map(str,p))+['1'] for p in sorted(pairs)],angles=angles,dihedrals=proper+improper)
+    if chemistry is not None:
+        from cgenff_library import apply
+        apply(topology,groups,chemistry,methyl)
+    return topology,groups
 
 def make_chain(key,n,methyl,silica,chemistry=None):
     topology,groups=make_topology(key,n,methyl,chemistry)
@@ -165,4 +169,4 @@ def make_chain(key,n,methyl,silica,chemistry=None):
     return block,topology
 
 def itp_text(topology):
-    return '; Generated connectivity; source charges + documented alpha-H patch\n'+''.join('\n[ '+k+' ]\n'+'\n'.join(' '.join(row) for row in rows)+'\n' for k,rows in topology.items())
+    return '; Organic charges: audited CGenFF; original silica / Si-C interface retained\n'+''.join('\n[ '+k+' ]\n'+'\n'.join(' '.join(row) for row in rows)+'\n' for k,rows in topology.items())
