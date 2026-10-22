@@ -1,0 +1,252 @@
+{
+  "uniqueModels": 145,
+  "counts": {
+    "monomer": 72,
+    "pentamer": 72,
+    "anchor5": 1
+  },
+  "families": {
+    "CB": {
+      "monomer": 16,
+      "pentamer": 16,
+      "anchor5": 1
+    },
+    "SB": {
+      "monomer": 16,
+      "pentamer": 16,
+      "anchor5": 0
+    },
+    "PB": {
+      "monomer": 16,
+      "pentamer": 16,
+      "anchor5": 0
+    },
+    "sulfabetaine": {
+      "monomer": 16,
+      "pentamer": 16,
+      "anchor5": 0
+    },
+    "PC": {
+      "monomer": 4,
+      "pentamer": 4,
+      "anchor5": 0
+    },
+    "TMAO": {
+      "monomer": 4,
+      "pentamer": 4,
+      "anchor5": 0
+    }
+  },
+  "originalCGenFFModels": 35,
+  "newCHARMMGUIModels": 110,
+  "missingSubmittedModelInputs": [],
+  "allAuditedGraphsAndBondedCoveragePass": true,
+  "highPenaltyModels": [
+    {
+      "file": "CB_ester_1_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "CB_ester_2_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "CB_ester_3_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "CB_ester_4_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "SB_ester_1_m0_monomer",
+      "chargePenalty": 43.134,
+      "parameterPenalty": 113.0
+    },
+    {
+      "file": "SB_ester_1_m0_pentamer",
+      "chargePenalty": 43.134,
+      "parameterPenalty": 113.0
+    },
+    {
+      "file": "PB_ester_1_m1_monomer",
+      "chargePenalty": 28.496,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "PB_ester_2_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "PB_ester_3_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "PB_ester_4_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "PC_ester_0_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "SB_amide_1_m0_monomer",
+      "chargePenalty": 43.134,
+      "parameterPenalty": 113.0
+    },
+    {
+      "file": "SB_amide_1_m0_pentamer",
+      "chargePenalty": 43.134,
+      "parameterPenalty": 113.0
+    },
+    {
+      "file": "SB_amide_1_m1_monomer",
+      "chargePenalty": 43.134,
+      "parameterPenalty": 113.0
+    },
+    {
+      "file": "SB_amide_1_m1_pentamer",
+      "chargePenalty": 43.134,
+      "parameterPenalty": 113.0
+    },
+    {
+      "file": "SB_ester_1_m1_monomer",
+      "chargePenalty": 43.134,
+      "parameterPenalty": 113.0
+    },
+    {
+      "file": "SB_ester_1_m1_pentamer",
+      "chargePenalty": 43.134,
+      "parameterPenalty": 113.0
+    },
+    {
+      "file": "SB_ester_2_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "SB_ester_3_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "SB_ester_4_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "sulfabetaine_ester_1_m1_monomer",
+      "chargePenalty": 32.533,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "sulfabetaine_ester_2_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "sulfabetaine_ester_3_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "sulfabetaine_ester_4_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    },
+    {
+      "file": "TMAO_ester_0_m1_monomer",
+      "chargePenalty": 17.076,
+      "parameterPenalty": 56.5
+    }
+  ],
+  "missingAnchorContexts": [
+    "CB_amide_1_m0",
+    "CB_amide_1_m1",
+    "CB_amide_2_m0",
+    "CB_amide_2_m1",
+    "CB_amide_3_m0",
+    "CB_amide_4_m0",
+    "CB_amide_4_m1",
+    "CB_ester_1_m0",
+    "CB_ester_1_m1",
+    "CB_ester_2_m0",
+    "CB_ester_2_m1",
+    "CB_ester_3_m0",
+    "CB_ester_3_m1",
+    "CB_ester_4_m0",
+    "CB_ester_4_m1",
+    "PB_amide_1_m0",
+    "PB_amide_1_m1",
+    "PB_amide_2_m0",
+    "PB_amide_2_m1",
+    "PB_amide_3_m0",
+    "PB_amide_3_m1",
+    "PB_amide_4_m0",
+    "PB_amide_4_m1",
+    "PB_ester_1_m0",
+    "PB_ester_1_m1",
+    "PB_ester_2_m0",
+    "PB_ester_2_m1",
+    "PB_ester_3_m0",
+    "PB_ester_3_m1",
+    "PB_ester_4_m0",
+    "PB_ester_4_m1",
+    "PC_amide_0_m0",
+    "PC_amide_0_m1",
+    "PC_ester_0_m0",
+    "PC_ester_0_m1",
+    "SB_amide_1_m0",
+    "SB_amide_1_m1",
+    "SB_amide_2_m0",
+    "SB_amide_2_m1",
+    "SB_amide_3_m0",
+    "SB_amide_3_m1",
+    "SB_amide_4_m0",
+    "SB_amide_4_m1",
+    "SB_ester_1_m0",
+    "SB_ester_1_m1",
+    "SB_ester_2_m0",
+    "SB_ester_2_m1",
+    "SB_ester_3_m0",
+    "SB_ester_3_m1",
+    "SB_ester_4_m0",
+    "SB_ester_4_m1",
+    "TMAO_amide_0_m0",
+    "TMAO_amide_0_m1",
+    "TMAO_ester_0_m0",
+    "TMAO_ester_0_m1",
+    "sulfabetaine_amide_1_m0",
+    "sulfabetaine_amide_1_m1",
+    "sulfabetaine_amide_2_m0",
+    "sulfabetaine_amide_2_m1",
+    "sulfabetaine_amide_3_m0",
+    "sulfabetaine_amide_3_m1",
+    "sulfabetaine_amide_4_m0",
+    "sulfabetaine_amide_4_m1",
+    "sulfabetaine_ester_1_m0",
+    "sulfabetaine_ester_1_m1",
+    "sulfabetaine_ester_2_m0",
+    "sulfabetaine_ester_2_m1",
+    "sulfabetaine_ester_3_m0",
+    "sulfabetaine_ester_3_m1",
+    "sulfabetaine_ester_4_m0",
+    "sulfabetaine_ester_4_m1"
+  ],
+  "mdReadySurfaces": 0,
+  "remainingValidation": [
+    "71 chemistry combinations need anchored-context results",
+    "N=1..4 need separate anchored short-chain contexts",
+    "Assembled-surface force-field compatibility, GROMACS and fixed-silica minimization checks remain",
+    "High CGenFF penalties require scientific validation; coverage alone does not establish accuracy"
+  ],
+  "quotaObservation": "110 new models plus the comparison and one duplicate succeeded; no quota warning observed. Unlimited use is not established."
+}

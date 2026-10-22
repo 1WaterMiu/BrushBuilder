@@ -30,7 +30,7 @@ def archive_structure(model):
         from cgenff_library import ROOT,key
         base=key(spec,model['methyl'])
         for suffix in ('monomer','pentamer','anchor5'):
-            for ext in ('.json','.str','.err'):
+            for ext in ('.json','.str','.err','.rtf','.prm'):
                 path=ROOT/'parsed'/(base+'_'+suffix+ext)
                 if path.exists():z.write(path,'cgenff/'+path.name)
             path=ROOT/'inputs'/(base+'_'+suffix+'.json')

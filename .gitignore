@@ -4,3 +4,7 @@ output/
 cgenff/charmm36-feb2026_cgenff-5.0.ff/
 cgenff/charmm36-feb2026_cgenff-5.0.ff.tgz
 cgenff/results/*/
+cgenff/charmm-gui-results/charmm-gui-*/
+cgenff/charmm-gui-results/*.tgz
+cgenff/charmm-gui-results/duplicates/
+cgenff/charmm-gui-comparison/charmm-gui-*/

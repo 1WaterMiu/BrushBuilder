@@ -1,9 +1,34 @@
-import unittest,json,hashlib
+import unittest,json,hashlib,tempfile,shutil
 from pathlib import Path
 from builder import build,archive
 from cgenff_library import ROOT,load
 
 class CGenFFTests(unittest.TestCase):
+    def test_compact_gui_archive_reimports_without_full_download(self):
+        from tools import import_charmm_gui as importer
+        from unittest.mock import patch
+        row=json.loads((ROOT/'charmm-gui-audit.json').read_text())[0]
+        stem=row['file']
+        with tempfile.TemporaryDirectory() as folder:
+            target=Path(folder);(target/'inputs').mkdir()
+            for ext in ('.json','.sdf'):shutil.copyfile(ROOT/'inputs'/(stem+ext),target/'inputs'/(stem+ext))
+            archive=target/Path(row['sourceArchive']).name
+            shutil.copyfile(ROOT/row['sourceArchive'],archive)
+            with patch.object(importer,'ROOT',target):report=importer.import_archive(archive)
+            self.assertTrue(report['bondedCoverage']['complete'])
+            self.assertEqual(json.loads((target/'parsed'/(stem+'.json')).read_text())['atoms'],load(stem)['atoms'])
+
+    def test_charmm_gui_provenance_and_graphs(self):
+        rows=json.loads((ROOT/'charmm-gui-audit.json').read_text())
+        self.assertGreaterEqual(len(rows),2)
+        for r in rows:
+            self.assertTrue(r['orderedChemicalGraphExact'])
+            self.assertTrue(r['bondedCoverage']['complete'])
+            self.assertAlmostEqual(r['charge'],0,places=8)
+            self.assertEqual(hashlib.sha256((ROOT/r['sourceArchive']).read_bytes()).hexdigest(),r['sourceArchiveSHA256'])
+            data=load(r['file'])
+            self.assertEqual(set(r['guiToInputAtomMap'].values()),set(data['atoms']))
+
     def test_result_provenance_and_coverage(self):
         rows=json.loads((ROOT/'audit.json').read_text())
         self.assertEqual(len(rows),35)

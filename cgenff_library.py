@@ -21,11 +21,11 @@ def status(spec,methyl,n=20):
     base=key(spec,methyl)
     mono=load(base+'_monomer');free=load(base+'_pentamer');anchor=load(base+'_anchor5')
     complete=bool(anchor) and n>=5
-    return dict(source='CGenFF web / force field 5.0',monomerAvailable=bool(mono),
+    return dict(source='CGenFF / CHARMM-GUI / force field 5.0',monomerAvailable=bool(mono),
         polymerContextAvailable=bool(free),anchorContextAvailable=bool(anchor),
         chargesComplete=complete,mdReady=False,
         reason='需要完成 GROMACS 参数覆盖及最小化验证' if complete else
-          ('短链需要包含接枝端的独立 CGenFF 结果' if anchor else 'CGenFF 官网额度已用完；缺少此组合或接枝端结果'),
+          ('短链需要包含接枝端的独立 CGenFF 结果' if anchor else '此组合或接枝端的 CGenFF 结果尚未齐全'),
         chargePenalty=(anchor or free or mono or {}).get('chargePenalty'),
         parameterPenalty=(anchor or free or mono or {}).get('parameterPenalty'),
         interfacePolicy='Only silica and anchor C1/H4/H5 retain source charges/types; all other organic atoms require CGenFF.',
