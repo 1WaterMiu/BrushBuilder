@@ -41,7 +41,7 @@ class Handler(SimpleHTTPRequestHandler):
                     from pathlib import Path
                     previous=json.loads((Path(record['directory'])/'model.json').read_text())
                     if 'parameterization' not in previous.get('chemistry',{}):
-                        raise ValueError('此旧任务使用模板电荷；当前 CGenFF-only 流程禁止作为新结果下载')
+                        raise ValueError('This legacy job uses template charges and cannot be downloaded as a new CGenFF result')
                     data=(Path(record['directory'])/('surface-md.zip' if url.path.endswith('download') else 'model.json')).read_bytes()
                     mime='application/zip' if url.path.endswith('download') else 'application/json'
             else: self.send_error(404); return

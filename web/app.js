@@ -1,31 +1,29 @@
 const $=s=>document.querySelector(s);
 let catalog,model,key='CBAA',density='high',table='repeatAtoms',view='side',angle=0,zoom=1,request=0,currentJob=null,poll=null;
 function settings(){const headGroup=$('#headGroup').value;return {headGroup,linker:$('#linkerChoice').value,...(!['PC','TMAO'].includes(headGroup)?{spacer:Number($('#spacer').value)}:{}),density,repeats:Number($('#repeats').value),methyl:$('#methyl').checked};}
-function controls(){const head=$('#headGroup').value,fixed=['PC','TMAO'].includes(head);$('#spacer').disabled=fixed;$('#spacer').hidden=fixed;$('#spacerNote').textContent=fixed?(head==='PC'?'固定为 –P–O–CH₂–CH₂–N⁺；不提供 spacer 选择。':'固定 N⁺–O⁻ 直接连接；不提供 spacer 选择。'):'只计算正负离子之间的 CH₂；不包含 linker 到 head 的连接段。';}
+function controls(){const head=$('#headGroup').value,fixed=['PC','TMAO'].includes(head);$('#spacer').disabled=fixed;$('#spacer').hidden=fixed;$('#spacerNote').textContent=fixed?(head==='PC'?'Fixed –P–O–CH₂–CH₂–N⁺ connectivity.':'Fixed direct N⁺–O⁻ bond.'):'Counts CH₂ groups between the positive and negative charges.';}
 function status(message,kind=''){const el=$('#status');el.textContent=message;el.className=kind;}
 async function json(url,options){const r=await fetch(url,options);if(!r.ok)throw Error((await r.text()).replace(/<[^>]*>/g,' ').slice(-1800));return r.json();}
 async function load(){
  controls();const id=++request;currentJob=null;$('#structureDownload').disabled=true;clearTimeout(poll);$('#download').disabled=true;$('#optimize').disabled=true;
- if(!$('#repeats').checkValidity()||!Number.isInteger(Number($('#repeats').value))){status('链长请输入 1–60 的整数','error');return;}
- status('正在独立生成坐标并重建拓扑…');
- try{const data=await json('/api/model?'+new URLSearchParams(settings()));if(id!==request)return;model=data;render();$('#structureDownload').disabled=false;$('#optimize').disabled=!model.parameterized;status(model.parameterized?'CGenFF 参数已就绪，可进行 GROMACS 最小化。':model.chemistry.parameterization.reason+'。可下载结构与已有电荷；未分配部分不会使用模板电荷。');}
- catch(e){if(id===request)status('生成失败：'+e.message,'error');}
+ if(!$('#repeats').checkValidity()||!Number.isInteger(Number($('#repeats').value))){status('Enter an integer from 1 to 60 for chain length.','error');return;}
+ status('Generating coordinates and topology…');
+ try{const data=await json('/api/model?'+new URLSearchParams(settings()));if(id!==request)return;model=data;render();$('#structureDownload').disabled=false;$('#optimize').disabled=!model.parameterized;status(model.parameterized?'CGenFF parameters are ready for GROMACS minimization.':model.chemistry.parameterization.reason+'. Structure and available charges can be downloaded.');}
+ catch(e){if(id===request)status('Build failed: '+e.message,'error');}
 }
 function render(){
  const chem=model.chemistry;$('#linker').textContent=chem.linker;
- $('#density').textContent=model.graftDensity.toFixed(4);$('#chains').textContent=model.chainCount;$('#area').textContent=model.area.toFixed(2);$('#charge').textContent=model.charge===null?'未填充':(Math.abs(model.charge)<1e-8?0:model.charge).toFixed(5);
+ $('#density').textContent=model.graftDensity.toFixed(4);$('#chains').textContent=model.chainCount;$('#area').textContent=model.area.toFixed(2);$('#charge').textContent=model.charge===null?'Unassigned':(Math.abs(model.charge)<1e-8?0:model.charge).toFixed(5);
  const done=model.status==='completed',top=model.topology;
- $('#chemistrySummary').textContent=chem.nomenclature.displayName+' / '+chem.linker+' · '+chem.monomerFormula+' · '+chem.chargePath+' · 单体 '+chem.repeatAtomCount+' 原子（含全部 H）';
+ $('#chemistrySummary').textContent=chem.nomenclature.displayName+' / '+chem.linker+' · '+chem.monomerFormula+' · '+chem.chargePath+' · Monomer: '+chem.repeatAtomCount+' atoms (all H included)';
  $('#moleculeDiagram').innerHTML=chem.structureSvg;
- const note=chem.matchesOriginalItp?'与原始 ITP 的化学连接一致；有机电荷重新由 CGenFF 生成。':'按所选结构生成；有机电荷仅使用已取得的 CGenFF 结果。';
- $('#templateCheck').textContent=note+' Linker 到 head 的连接段：'+chem.connectorCH2+' 个 CH₂。'+(chem.referenceTemplate?' N=20 原 ITP 全分子核对：'+(chem.referenceTemplate==='CBAA'?'915 原子 / 916 键':'855 原子 / 856 键')+'，缺失原子/键 = 0（带甲基版本）。':'')+(chem.referenceTemplate==='CBAA'?' 来源文件名 CBAA3；按其实际甲基/amide 结构，规范显示为 CBMAA · spacer 3。':'');
  $('#chemistrySource').replaceChildren();const sourceLink=document.createElement('a');sourceLink.href=chem.nomenclature.source.url;sourceLink.textContent=chem.nomenclature.source.title;sourceLink.target='_blank';sourceLink.rel='noopener';$('#chemistrySource').append(sourceLink,document.createTextNode(' · '+chem.nomenclature.source.scope));
  const p=chem.parameterization;
- const fields={'参数状态':p.chargesComplete?'CGenFF 电荷已齐；MD 验证待完成':'CGenFF 结果不完整','单体 / 五聚体 / 接枝端':[p.monomerAvailable,p.polymerContextAvailable,p.anchorContextAvailable].map(v=>v?'已取得':'待计算').join(' / '),'Charge / parameter penalty':(p.chargePenalty??'—')+' / '+(p.parameterPenalty??'—'),'几何模板':model.geometryVersion,'原子 / 固定':model.atoms.length.toLocaleString()+' / '+model.frozen.length.toLocaleString(),'链长 / 甲基':model.repeats+' / '+(model.methyl?'有':'无'),'最小化':done?'已收敛':'尚未完成','Silica 位移':done?'0 nm · 已核验':'待核验'};
+ const fields={'Parameter status':p.chargesComplete?'CGenFF charges complete; MD validation pending':'CGenFF results incomplete','Monomer / Pentamer / Anchor':[p.monomerAvailable,p.polymerContextAvailable,p.anchorContextAvailable].map(v=>v?'Available':'Pending').join(' / '),'Charge / parameter penalty':(p.chargePenalty??'—')+' / '+(p.parameterPenalty??'—'),'Geometry template':model.geometryVersion,'Atoms / Frozen':model.atoms.length.toLocaleString()+' / '+model.frozen.length.toLocaleString(),'Chain length / Methyl':model.repeats+' / '+(model.methyl?'Yes':'No'),'Minimization':done?'Converged':'Not completed','Silica displacement':done?'0 nm · Verified':'Pending verification'};
  $('#source').innerHTML=Object.entries(fields).map(([k,v])=>'<dt>'+k+'</dt><dd>'+v+'</dd>').join('');
  const terms={Bond:top.bonds.length,Angle:top.angles.length,Dihedral:top.dihedrals.filter(r=>r[4]==='9').length,Improper:top.dihedrals.filter(r=>r[4]==='2').length,'1–4 pairs':top.pairs.length};
  $('#counts').innerHTML=Object.entries(terms).map(([k,v])=>'<dt>'+k+'</dt><dd>'+v.toLocaleString()+'</dd>').join('');
- $('#viewName').textContent=(view==='top'?'俯视':'侧视图')+' · '+(done?'优化后坐标':'初始坐标');renderTable();draw();
+ $('#viewName').textContent=(view==='top'?'Top view':'Side view')+' · '+(done?'Optimized coordinates':'Initial coordinates');renderTable();draw();
 }
 function renderTable(){
  if(!model)return;const top=model.topology;let rows,headers;
@@ -36,7 +34,7 @@ function renderTable(){
  $('#tbody').innerHTML=rows.map(a=>'<tr>'+a.map(x=>'<td>'+x+'</td>').join('')+'</tr>').join('');
 }
 $('#optimize').onclick=async()=>{
- const version=request;$('#optimize').disabled=true;$('#download').disabled=true;status('正在提交 GROMACS 优化任务…');
+ const version=request;$('#optimize').disabled=true;$('#download').disabled=true;status('Submitting GROMACS minimization…');
  try{const result=await json('/api/jobs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(settings())});if(version!==request)return;currentJob=result.id;watch(result.id,version);}
  catch(e){status(e.message,'error');$('#optimize').disabled=false;}
 };
@@ -67,6 +65,4 @@ $('#reset').onclick=()=>{angle=0;zoom=1;draw();};$('#repeats').onchange=load;$('
 document.querySelectorAll('[data-density]').forEach(b=>b.onclick=()=>{density=b.dataset.density;document.querySelectorAll('[data-density]').forEach(x=>x.classList.toggle('active',x===b));load();});
 document.querySelectorAll('[data-table]').forEach(b=>b.onclick=()=>{table=b.dataset.table;document.querySelectorAll('[data-table]').forEach(x=>x.classList.toggle('active',x===b));renderTable();});
 for(const id of ['headGroup','linkerChoice','spacer'])$('#'+id).onchange=load;
-$('#presetCbaa').onclick=()=>{$('#headGroup').value='CB';$('#linkerChoice').value='amide';$('#spacer').value='3';$('#methyl').checked=true;load();};
-$('#presetSbma').onclick=()=>{$('#headGroup').value='SB';$('#linkerChoice').value='ester';$('#spacer').value='3';$('#methyl').checked=true;load();};
 json('/api/catalog').then(data=>{catalog=data;load();}).catch(e=>status(e.message,'error'));

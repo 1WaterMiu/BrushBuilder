@@ -127,7 +127,7 @@ def run_command(command,directory,log):
 def submit(parameters):
     from builder import ROOT
     ident=uuid.uuid4().hex
-    with LOCK: JOBS[ident]=dict(id=ident,status='queued',message='等待 GROMACS',parameters=parameters,directory=str(ROOT/'output'/'jobs'/ident))
+    with LOCK: JOBS[ident]=dict(id=ident,status='queued',message='Waiting for GROMACS',parameters=parameters,directory=str(ROOT/'output'/'jobs'/ident))
     POOL.submit(work,ident,parameters,ROOT/'output'/'jobs'/ident)
     return ident
 
@@ -138,15 +138,15 @@ def work(ident,parameters,directory):
             JOBS[ident].update(fields)
             if directory.exists(): (directory/'job.json').write_text(json.dumps(JOBS[ident]))
     try:
-        update(status='building',message='独立生成坐标与完整拓扑')
+        update(status='building',message='Generating coordinates and topology')
         model=build(**parameters); directory.mkdir(parents=True)
         with zipfile.ZipFile(io.BytesIO(archive(model))) as z: z.extractall(directory)
         initial_manifest=json.loads((directory/'manifest.json').read_text())
         shutil.copy2(directory/'surface.gro',directory/'initial.gro')
         command=engine()
-        update(status='preprocessing',message='GROMACS 检查 bonded / nonbonded 参数')
+        update(status='preprocessing',message='Checking bonded and nonbonded parameters with GROMACS')
         run_command(command+['grompp','-f','em.mdp','-c','surface.gro','-p','topol.top','-n','index.ndx','-o','em.tpr','-pp','processed.top'],directory,'grompp.log')
-        update(status='minimizing',message='正在最小化聚合物；silica XYZ 冻结')
+        update(status='minimizing',message='Minimizing polymer chains with silica fixed')
         run_command(command+['mdrun','-deffnm','em','-ntmpi','1','-ntomp','4'],directory,'mdrun.log')
         before,_=gro(directory/'initial.gro'); after,_=gro(directory/'em.gro')
         if len(before)!=len(after): raise RuntimeError('Atom count changed during minimization')
@@ -181,7 +181,7 @@ def work(ident,parameters,directory):
             for name in files: z.write(directory/name,name)
             for folder in ['geometry_templates','parameter_audit']:
                 for file in sorted((directory/folder).glob('*.json')): z.write(file,file.relative_to(directory))
-        update(status='completed',message='最小化收敛；silica 位移为 0；完整模拟包可下载',result=model['minimization'],directory=str(directory))
+        update(status='completed',message='Minimization converged; the MD package is ready to download',result=model['minimization'],directory=str(directory))
     except Exception as e: update(status='failed',message=str(e),directory=str(directory))
 
 def job(ident):
@@ -193,9 +193,9 @@ def job(ident):
             if (directory/'job.json').exists():
                 record=json.loads((directory/'job.json').read_text())
                 if record['status'] not in ('completed','failed'):
-                    record.update(status='failed',message='服务重启中断了任务；请重新提交')
+                    record.update(status='failed',message='The server restarted during this job. Please submit it again.')
                 JOBS[ident]=record
             elif (directory/'surface-md.zip').exists() and (directory/'model.json').exists():
-                JOBS[ident]=dict(id=ident,status='completed',message='已恢复完成的优化结果',directory=str(directory))
+                JOBS[ident]=dict(id=ident,status='completed',message='Completed minimization results restored',directory=str(directory))
             else: raise ValueError('Unknown job')
         return JOBS[ident].copy()
