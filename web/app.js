@@ -4,6 +4,22 @@ function settings(){const headGroup=$('#headGroup').value;return {headGroup,link
 function controls(){const head=$('#headGroup').value,fixed=['PC','TMAO'].includes(head);$('#spacer').disabled=fixed;$('#spacer').hidden=fixed;$('#spacerNote').textContent=fixed?(head==='PC'?'Fixed –P–O–CH₂–CH₂–N⁺ connectivity.':'Fixed direct N⁺–O⁻ bond.'):'Counts CH₂ groups between the positive and negative charges.';}
 function status(message,kind=''){const el=$('#status');el.textContent=message;el.className=kind;}
 async function json(url,options){const r=await fetch(url,options);if(!r.ok)throw Error((await r.text()).replace(/<[^>]*>/g,' ').slice(-1800));return r.json();}
+let pubchemRequest=0;
+async function showMonomer(smiles){
+ const token=++pubchemRequest,version=request;
+ $('#monomerSmiles').textContent=smiles;
+ const target=$('#pubchemResult');target.textContent='Searching PubChem by structure…';
+ try{
+  const result=await json('/api/pubchem?'+new URLSearchParams({smiles}));
+  if(token!==pubchemRequest||version!==request)return;
+  target.replaceChildren();
+  if(result.status==='found'){
+   target.append(document.createTextNode('PubChem identity match: '));
+   result.cids.forEach((cid,i)=>{if(i)target.append(document.createTextNode(' · '));const a=document.createElement('a');a.href='https://pubchem.ncbi.nlm.nih.gov/compound/'+cid;a.textContent='CID '+cid;a.target='_blank';a.rel='noopener';target.append(a);});
+  }else target.textContent=result.status==='not_found'?'No matching structure found in PubChem.':'PubChem is temporarily unavailable. Please retry.';
+ }catch(e){if(token===pubchemRequest&&version===request)target.textContent='PubChem lookup failed. Please retry.';}
+}
+$('#pubchemRetry').onclick=()=>{if(model)showMonomer(model.chemistry.monomerSmiles);};
 async function load(){
  controls();const id=++request;currentJob=null;$('#structureDownload').disabled=true;clearTimeout(poll);$('#download').disabled=true;$('#optimize').disabled=true;
  if(!$('#repeats').checkValidity()||!Number.isInteger(Number($('#repeats').value))){status('Enter an integer from 1 to 60 for chain length.','error');return;}
@@ -17,6 +33,7 @@ function render(){
  const done=model.status==='completed',top=model.topology;
  $('#chemistrySummary').textContent=chem.nomenclature.displayName+' / '+chem.linker+' · '+chem.monomerFormula+' · '+chem.chargePath+' · Monomer: '+chem.repeatAtomCount+' atoms (all H included)';
  $('#moleculeDiagram').innerHTML=chem.structureSvg;
+ showMonomer(chem.monomerSmiles);
  $('#chemistrySource').replaceChildren();const sourceLink=document.createElement('a');sourceLink.href=chem.nomenclature.source.url;sourceLink.textContent=chem.nomenclature.source.title;sourceLink.target='_blank';sourceLink.rel='noopener';$('#chemistrySource').append(sourceLink,document.createTextNode(' · '+chem.nomenclature.source.scope));
  const p=chem.parameterization;
  const fields={'Parameter status':p.chargesComplete?'CGenFF charges complete; MD validation pending':'CGenFF results incomplete','Monomer / Pentamer / Anchor':[p.monomerAvailable,p.polymerContextAvailable,p.anchorContextAvailable].map(v=>v?'Available':'Pending').join(' / '),'Charge / parameter penalty':(p.chargePenalty??'—')+' / '+(p.parameterPenalty??'—'),'Geometry template':model.geometryVersion,'Atoms / Frozen':model.atoms.length.toLocaleString()+' / '+model.frozen.length.toLocaleString(),'Chain length / Methyl':model.repeats+' / '+(model.methyl?'Yes':'No'),'Minimization':done?'Converged':'Not completed','Silica displacement':done?'0 nm · Verified':'Pending verification'};

@@ -30,6 +30,9 @@ class Handler(SimpleHTTPRequestHandler):
             return super().do_GET()
         try:
             if url.path=='/api/catalog': data=json.dumps(catalog()).encode(); mime='application/json'
+            elif url.path=='/api/pubchem':
+                from pubchem_lookup import lookup
+                data=json.dumps(lookup(parse_qs(url.query).get('smiles',[''])[0])).encode(); mime='application/json'
             elif url.path in ('/api/model','/api/structure'):
                 q=parse_qs(url.query)
                 values={k:v[0] for k,v in q.items()}

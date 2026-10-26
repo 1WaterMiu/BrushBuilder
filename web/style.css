@@ -6,3 +6,5 @@
 
 /* Keep larger text readable across viewport sizes. */
 input{font:inherit}small{font-size:13.667px}.layout{grid-template-columns:305px minmax(0,1fr)}.stats>div,.detail-grid article{min-width:0}.stats span{overflow-wrap:anywhere}.viewer-top{gap:12px;flex-wrap:wrap}.legend{flex-wrap:wrap}dl{grid-template-columns:minmax(95px,1fr) minmax(0,1.2fr)}.tabs{flex-wrap:wrap}@media(max-width:1000px){.layout{grid-template-columns:270px minmax(0,1fr)}.intro{gap:20px}.badge{flex-shrink:0}}@media(max-width:700px){.layout{grid-template-columns:1fr}.viewer-top b{display:block;margin:4px 0 0}.intro h1{overflow-wrap:anywhere}.brand{font-size:27px}.local{font-size:14px}}
+
+.monomer-identity{margin:16px 0;padding:16px;background:#f4f7f2;border:1px solid #d9e2db;border-radius:10px}.monomer-identity code{display:block;margin:10px 0;font-size:16px;white-space:pre-wrap;overflow-wrap:anywhere;user-select:all}.pubchem-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.pubchem-row a{color:#176b55}.monomer-identity small{display:block;margin-top:8px;color:#71847e}
